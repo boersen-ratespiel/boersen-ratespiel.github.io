@@ -63,6 +63,8 @@ Der Flag ist `sessionStorage`, nicht `localStorage` — der Splash soll bei jede
 
 **SEO-Basics:** `robots.txt` (erlaubt alles, verweist auf `sitemap.xml`) und `sitemap.xml` (listet `index.html`, `impressum.html`, `datenschutz.html`) wurden beim Live-Start ergänzt. `impressum.html`/`datenschutz.html` tragen zusätzlich `<meta name="robots" content="noindex">`, damit Suchmaschinen nur die eigentliche App indexieren, nicht die Rechtsseiten.
 
+**Analytics (GoatCounter):** Ein `<script data-goatcounter="https://boersen-ratespiel.goatcounter.com/count" ...>`-Snippet in `index.html` zählt Besuche — bewusst GoatCounter statt Google Analytics gewählt, weil es keine Cookies setzt und keine IP-Adressen speichert (siehe Erklärung in `datenschutz.html`, Abschnitt "Reichweitenmessung"). Das Skript ignoriert `localhost` automatisch (loggt eine Konsolen-Warnung statt zu zählen) — beim lokalen Testen ist das erwartetes, kein fehlerhaftes Verhalten. Dashboard: https://boersen-ratespiel.goatcounter.com (Login bei Max).
+
 Die Schriftart "Outfit" wurde bewusst von Google Fonts auf lokal gehostet umgestellt (`fonts/outfit-variable.woff2`, eingebunden über `@font-face` in `style.css`): Das dynamische Nachladen von Google Fonts überträgt beim Seitenaufruf die IP-Adresse des Besuchers an Google (USA) — das gilt in Deutschland als DSGVO-Risiko (siehe u. a. LG München I, 2022) und wurde vor dem geplanten Live-Start entfernt. Die Datei ist eine Variable-Font-Version, die alle Schriftschnitte (400–800) in einer einzigen ~32 KB großen Datei abdeckt.
 
 ## Achtung: lokaler Test-Server cached script.js
