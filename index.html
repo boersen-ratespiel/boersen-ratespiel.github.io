@@ -27,6 +27,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="bootSplash" class="boot-splash">
+    <div class="boot-badge">📈</div>
+    <div class="boot-text">KI-System wird initialisiert<span class="ai-typing-dots"><span></span><span></span><span></span></span></div>
+    <div class="boot-bar-track"><div class="boot-bar-fill"></div></div>
+  </div>
+  <script>
+    if (sessionStorage.getItem('boersenspiel_booted')) {
+      document.getElementById('bootSplash').style.display = 'none';
+    }
+  </script>
+
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
   <div class="app">
