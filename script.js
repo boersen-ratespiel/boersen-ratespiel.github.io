@@ -1,3 +1,14 @@
+const bootSplash = document.getElementById('bootSplash');
+if (bootSplash.style.display !== 'none') {
+  setTimeout(() => {
+    bootSplash.classList.add('hide');
+    sessionStorage.setItem('boersenspiel_booted', '1');
+    setTimeout(() => bootSplash.remove(), 550);
+  }, 1300);
+} else {
+  bootSplash.remove();
+}
+
 const menu = document.getElementById('menu');
 document.querySelectorAll('.menu-item[data-view]').forEach(btn => {
   btn.addEventListener('click', () => {
