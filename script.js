@@ -498,6 +498,89 @@ document.getElementById('depotReset').addEventListener('click', () => {
 
 renderDepot();
 
+// --- KI-Berater ---
+
+function generateDepotAdvice() {
+  const holdingsEntries = depot.stocks
+    .map(s => ({ ...s, shares: depot.holdings[s.id] || 0, value: (depot.holdings[s.id] || 0) * s.price }))
+    .filter(s => s.shares > 0);
+  const holdingsValue = depotHoldingsValue();
+  const total = depot.cash + holdingsValue;
+  const returnPct = ((total - DEPOT_START_CASH) / DEPOT_START_CASH) * 100;
+
+  const messages = [];
+
+  if (holdingsEntries.length === 0) {
+    messages.push('Dein Depot ist noch komplett in Cash. Wie wäre es mit einer ersten Position, um zu starten? 🚀');
+  } else if (holdingsEntries.length === 1) {
+    messages.push(`Du hältst aktuell nur ${holdingsEntries[0].name}. Eine zweite Aktie aus einer anderen Branche würde dein Risiko streuen.`);
+  } else {
+    messages.push(`Du bist in ${holdingsEntries.length} verschiedene Aktien investiert — solide Diversifikation für den Anfang.`);
+  }
+
+  if (holdingsEntries.length > 0) {
+    const largest = holdingsEntries.reduce((a, b) => (b.value > a.value ? b : a));
+    const concentration = (largest.value / holdingsValue) * 100;
+    if (concentration > 60) {
+      messages.push(`Achtung: ${concentration.toFixed(0)}% deines Depotwerts stecken allein in ${largest.name}. Das ist ein Klumpenrisiko.`);
+    }
+  }
+
+  const cashRatio = (depot.cash / total) * 100;
+  if (cashRatio > 70 && holdingsEntries.length > 0) {
+    messages.push(`${cashRatio.toFixed(0)}% deines Vermögens liegen noch als Cash da — ungenutztes Potenzial fürs Depot.`);
+  }
+
+  if (returnPct > 5) {
+    messages.push(`Deine Rendite von +${returnPct.toFixed(1)}% läuft gut — bleib diszipliniert und handle nicht überstürzt. 📈`);
+  } else if (returnPct < -5) {
+    messages.push(`Aktuell ${returnPct.toFixed(1)}% im Minus — ganz normal bei schwankenden Kursen. Langfristig zählt der Zeithorizont, nicht ein einzelner Tag.`);
+  } else {
+    messages.push(`Deine Rendite liegt bei ${returnPct >= 0 ? '+' : ''}${returnPct.toFixed(1)}% — im neutralen Bereich, gut zu beobachten.`);
+  }
+
+  return messages.slice(0, 4);
+}
+
+function showTypingBubble(container) {
+  const bubble = document.createElement('div');
+  bubble.className = 'ai-bubble ai-typing-bubble';
+  bubble.innerHTML = '<span class="ai-typing-dots"><span></span><span></span><span></span></span>';
+  container.appendChild(bubble);
+  return bubble;
+}
+
+function openAiAdvisor() {
+  const overlay = document.getElementById('aiModal');
+  const body = document.getElementById('aiChatBody');
+  body.innerHTML = '';
+  overlay.classList.remove('hidden');
+
+  const typingBubble = showTypingBubble(body);
+
+  setTimeout(() => {
+    typingBubble.remove();
+    const advice = generateDepotAdvice();
+    advice.forEach((text, i) => {
+      setTimeout(() => {
+        const bubble = document.createElement('div');
+        bubble.className = 'ai-bubble';
+        bubble.textContent = text;
+        body.appendChild(bubble);
+        body.scrollTop = body.scrollHeight;
+      }, i * 450);
+    });
+  }, 1100);
+}
+
+document.getElementById('aiAdvisorBtn').addEventListener('click', openAiAdvisor);
+document.getElementById('aiModalClose').addEventListener('click', () => {
+  document.getElementById('aiModal').classList.add('hidden');
+});
+document.getElementById('aiModal').addEventListener('click', (e) => {
+  if (e.target.id === 'aiModal') document.getElementById('aiModal').classList.add('hidden');
+});
+
 // --- News ---
 
 const NEWS_POOL = [
@@ -524,9 +607,27 @@ function pickRandomNews(count) {
   return shuffled.slice(0, count);
 }
 
+function renderNewsAiFazit(items) {
+  const counts = { bullish: 0, bearish: 0, neutral: 0 };
+  items.forEach(item => counts[item.sentiment]++);
+
+  let text;
+  if (counts.bullish > counts.bearish && counts.bullish >= 2) {
+    text = 'Überwiegend positive Signale — die Chancen scheinen aktuell zu überwiegen.';
+  } else if (counts.bearish > counts.bullish && counts.bearish >= 2) {
+    text = 'Vorsicht angesagt — mehrere belastende Faktoren dominieren gerade das Bild.';
+  } else {
+    text = 'Gemischtes Bild — positive und negative Signale halten sich in etwa die Waage.';
+  }
+
+  document.getElementById('newsAiFazit').innerHTML = `<span class="ai-badge">🤖 KI-Fazit</span> ${text}`;
+}
+
 function renderNews() {
   const items = pickRandomNews(4);
   const [topStory, ...rest] = items;
+
+  renderNewsAiFazit(items);
 
   const topEl = document.getElementById('newsTop');
   const sentiment = SENTIMENT_META[topStory.sentiment];

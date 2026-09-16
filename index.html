@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
   <div class="app">
     <header>
@@ -83,6 +84,8 @@
       <div class="ticker">
         <div id="tickerTrack" class="ticker-track"></div>
       </div>
+
+      <div id="newsAiFazit" class="ai-fazit"></div>
 
       <div id="newsTop" class="news-top"></div>
 
@@ -151,6 +154,15 @@
         <div class="stat"><span class="label">Gesamt</span><span id="depotTotal" class="value">0 €</span></div>
       </div>
 
+      <button id="aiAdvisorBtn" class="ai-advisor-btn">
+        <span class="ai-advisor-icon">🤖</span>
+        <span class="ai-advisor-text">
+          <span class="ai-advisor-title">KI-Berater</span>
+          <span class="ai-advisor-sub">Lass dein Depot analysieren</span>
+        </span>
+        <span class="ai-advisor-arrow">→</span>
+      </button>
+
       <div class="panel depot-panel">
         <div class="depot-panel-head">
           <h2>💼 Musterdepot</h2>
@@ -204,6 +216,18 @@
         <button id="confirmModalCancel" class="mini-btn">Abbrechen</button>
         <button id="confirmModalOk" class="btn down">Zurücksetzen</button>
       </div>
+    </div>
+  </div>
+
+  <div id="aiModal" class="modal-overlay hidden">
+    <div class="modal-panel ai-panel">
+      <div class="ai-chat-header">
+        <span class="ai-avatar">🤖</span>
+        <span class="ai-chat-title">KI-Berater</span>
+        <button id="aiModalClose" class="ai-close" aria-label="Schließen">✕</button>
+      </div>
+      <div id="aiChatBody" class="ai-chat-body"></div>
+      <p class="ai-disclaimer">Regelbasierte Analyse deines simulierten Depots, keine echte Anlageberatung.</p>
     </div>
   </div>
 
