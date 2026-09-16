@@ -22,6 +22,8 @@
   --purple: #a78bfa;
   --purple-2: #c026d3;
   --accent: #6366f1;
+  --ai: #22d3ee;
+  --ai-2: #0891b2;
   --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
 }
 
@@ -960,6 +962,179 @@ canvas {
 }
 
 .app-footer a:hover { color: var(--text); text-decoration: underline; }
+
+/* KI-Berater */
+
+.ai-advisor-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.14), rgba(8, 145, 178, 0.08));
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  border-radius: 18px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.ai-advisor-btn::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  padding: 2px;
+  background: conic-gradient(from 0deg, var(--ai), transparent 30%, var(--ai), transparent 60%, var(--ai));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+  animation: aiGlowSpin 4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes aiGlowSpin {
+  to { transform: rotate(360deg); }
+}
+
+.ai-advisor-btn:hover { transform: translateY(-2px); border-color: rgba(34, 211, 238, 0.6); }
+.ai-advisor-btn:active { transform: translateY(0) scale(0.98); }
+
+.ai-advisor-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  background: rgba(34, 211, 238, 0.16);
+}
+
+.ai-advisor-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.ai-advisor-title { font-weight: 700; font-size: 0.98rem; color: var(--ai); }
+.ai-advisor-sub { font-size: 0.78rem; color: var(--muted); }
+.ai-advisor-arrow { color: var(--ai); font-size: 1.1rem; }
+
+.ai-panel {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+.ai-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.ai-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ai), var(--ai-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.ai-chat-title { font-weight: 800; flex: 1; }
+
+.ai-close {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: var(--text);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.ai-chat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  min-height: 100px;
+}
+
+.ai-bubble {
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  border-radius: 14px 14px 14px 4px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  align-self: flex-start;
+  max-width: 100%;
+  animation: aiBubbleIn 0.25s cubic-bezier(.2,.8,.2,1) both;
+}
+
+@keyframes aiBubbleIn {
+  from { opacity: 0; transform: translateY(6px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.ai-typing-bubble { padding: 14px 18px; }
+
+.ai-typing-dots { display: inline-flex; gap: 4px; }
+
+.ai-typing-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ai);
+  animation: aiTypingBounce 1.2s ease-in-out infinite;
+}
+
+.ai-typing-dots span:nth-child(2) { animation-delay: 0.15s; }
+.ai-typing-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes aiTypingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-5px); opacity: 1; }
+}
+
+.ai-disclaimer {
+  margin: 14px 0 0;
+  font-size: 0.68rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.ai-fazit {
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.ai-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--ai), var(--ai-2));
+  color: #052228;
+  font-weight: 800;
+  font-size: 0.68rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-right: 8px;
+}
 
 /* Confetti */
 
