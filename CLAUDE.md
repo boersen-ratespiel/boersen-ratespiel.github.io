@@ -65,6 +65,8 @@ Der Flag ist `sessionStorage`, nicht `localStorage` — der Splash soll bei jede
 
 **Analytics (GoatCounter):** Ein `<script data-goatcounter="https://boersen-ratespiel.goatcounter.com/count" ...>`-Snippet in `index.html` zählt Besuche — bewusst GoatCounter statt Google Analytics gewählt, weil es keine Cookies setzt und keine IP-Adressen speichert (siehe Erklärung in `datenschutz.html`, Abschnitt "Reichweitenmessung"). Das Skript ignoriert `localhost` automatisch (loggt eine Konsolen-Warnung statt zu zählen) — beim lokalen Testen ist das erwartetes, kein fehlerhaftes Verhalten. Dashboard: https://boersen-ratespiel.goatcounter.com (Login bei Max).
 
+Falls das Dashboard nach dem Launch weiter "Keine Daten empfangen" zeigt, obwohl das Skript korrekt eingebunden ist (Ad-Blocker/Inkognito ausgeschlossen): zuerst prüfen, ob die GoatCounter-Bestätigungsmail angeklickt wurde — ein unbestätigter Account hat bei uns tatsächlich keine Daten gezählt, obwohl alles technisch korrekt konfiguriert war. War die eigentliche Ursache am 2026-09-16, keine Werbeblocker-Sache.
+
 Die Schriftart "Outfit" wurde bewusst von Google Fonts auf lokal gehostet umgestellt (`fonts/outfit-variable.woff2`, eingebunden über `@font-face` in `style.css`): Das dynamische Nachladen von Google Fonts überträgt beim Seitenaufruf die IP-Adresse des Besuchers an Google (USA) — das gilt in Deutschland als DSGVO-Risiko (siehe u. a. LG München I, 2022) und wurde vor dem geplanten Live-Start entfernt. Die Datei ist eine Variable-Font-Version, die alle Schriftschnitte (400–800) in einer einzigen ~32 KB großen Datei abdeckt.
 
 ## Achtung: lokaler Test-Server cached script.js
