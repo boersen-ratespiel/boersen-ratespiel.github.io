@@ -16,6 +16,7 @@ document.querySelectorAll('.menu-item[data-view]').forEach(btn => {
     document.getElementById(btn.dataset.view).classList.remove('hidden');
     if (btn.dataset.view === 'learn-view') resetLearnView();
     if (btn.dataset.view === 'game-view') newRound();
+    if (btn.dataset.view === 'news-view') updateTickerSpeed();
   });
 });
 document.querySelectorAll('.back-btn').forEach(btn => {
@@ -592,9 +593,32 @@ document.getElementById('aiModal').addEventListener('click', (e) => {
   if (e.target.id === 'aiModal') document.getElementById('aiModal').classList.add('hidden');
 });
 
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  const confirmModal = document.getElementById('confirmModal');
+  if (!confirmModal.classList.contains('hidden')) {
+    document.getElementById('confirmModalCancel').click();
+  } else {
+    document.getElementById('aiModal').classList.add('hidden');
+  }
+});
+
 // --- News ---
 
-const NEWS_POOL = [
+// Echte Meldungen stehen in news.json (per GitHub Action aus den RSS-Feeds von Destatis und EZB erzeugt, siehe
+// scripts/update_news.py). NEWS_EXAMPLES sind frei erfundene Ersatz-Meldungen, die nur erscheinen, wenn news.json
+// nicht geladen werden kann — und dann klar als Beispiel gekennzeichnet werden.
+const NEWS_URL = 'news.json';
+const NEWS_PAGE_SIZE = 4;
+const NEWS_LINK_HOSTS = ['www.destatis.de', 'www.ecb.europa.eu'];
+const NEWS_SOURCES_NOTE = [
+  { name: 'Statistisches Bundesamt (Destatis)', url: 'https://www.destatis.de/DE/Presse/Pressemitteilungen/_inhalt.html' },
+  { name: 'Europäische Zentralbank (EZB)', url: 'https://www.ecb.europa.eu/press/pr/html/index.en.html' },
+];
+const TICKER_MAX_ITEMS = 12;
+const TICKER_PX_PER_SECOND = 45;
+
+const NEWS_EXAMPLES = [
   { headline: 'DAX unter Druck', desc: 'Steigende Ölpreise belasten die Märkte, der DAX hat zuletzt deutlich nachgegeben.', category: 'Markt', sentiment: 'bearish', impact: 3 },
   { headline: 'Fed signalisiert Zinssenkung', desc: 'Die Notenbank stellt eine lockerere Geldpolitik in Aussicht — die Börsen reagieren erleichtert.', category: 'Politik', sentiment: 'bullish', impact: 3 },
   { headline: 'Öl auf Jahreshoch', desc: 'Geopolitische Spannungen treiben die Rohstoffpreise weiter nach oben.', category: 'Markt', sentiment: 'bearish', impact: 2 },
@@ -607,73 +631,227 @@ const NEWS_POOL = [
   { headline: 'Übernahmegerüchte belasten Branche', desc: 'Spekulationen um eine mögliche Fusion sorgen für Unsicherheit bei Investoren.', category: 'Unternehmen', sentiment: 'bearish', impact: 1 },
 ];
 
+// Beispielmeldungen tragen eine Marktstimmung. Echte Meldungen (Statistik, Zentralbank) tragen nur die Richtung
+// der gemeldeten Zahl — "Erzeugerpreise +4,6 %" ist keine gute oder schlechte Nachricht an sich.
 const SENTIMENT_META = {
   bullish: { icon: '🟢', label: 'Bullish' },
   bearish: { icon: '🔴', label: 'Bearish' },
   neutral: { icon: '⚪', label: 'Neutral' },
 };
+const TREND_META = {
+  up: { icon: '📈', label: 'Zahl steigt' },
+  down: { icon: '📉', label: 'Zahl sinkt' },
+  flat: { icon: '⚪', label: 'Neutral' },
+};
 
-function pickRandomNews(count) {
-  const shuffled = [...NEWS_POOL].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+const newsState = { items: [], live: false, loading: true, updated: null, offset: 0 };
+
+const newsEls = {
+  ticker: document.querySelector('.ticker'),
+  track: document.getElementById('tickerTrack'),
+  status: document.getElementById('newsStatus'),
+  fazit: document.getElementById('newsAiFazit'),
+  top: document.getElementById('newsTop'),
+  list: document.getElementById('newsList'),
+  note: document.getElementById('newsNote'),
+  shuffle: document.getElementById('newsShuffle'),
+};
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function safeNewsUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && NEWS_LINK_HOSTS.includes(url.hostname) ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
+function formatNewsAge(date) {
+  const mins = Math.floor((Date.now() - date.getTime()) / 60000);
+  if (mins < 1) return 'gerade eben';
+  if (mins < 60) return `vor ${mins} Min.`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `vor ${hours} Std.`;
+  const days = Math.floor(hours / 24);
+  if (days === 1) return 'gestern';
+  if (days < 7) return `vor ${days} Tagen`;
+  return date.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' });
+}
+
+// Prüft jeden Eintrag aus news.json und lässt nur bekannte, harmlose Werte durch.
+function parseNewsFeed(data) {
+  if (!data || !Array.isArray(data.items)) return [];
+  return data.items.map(raw => {
+    const url = safeNewsUrl(raw && raw.url);
+    const published = new Date(raw && raw.published);
+    if (!url || typeof raw.headline !== 'string' || !raw.headline || Number.isNaN(published.getTime())) return null;
+    return {
+      headline: raw.headline,
+      desc: typeof raw.desc === 'string' ? raw.desc : '',
+      source: typeof raw.source === 'string' ? raw.source.slice(0, 80) : '',
+      lang: raw.lang === 'en' ? 'en' : 'de',
+      category: typeof raw.category === 'string' && raw.category ? raw.category.slice(0, 30) : 'Wirtschaft',
+      trend: ['up', 'down', 'flat'].includes(raw.trend) ? raw.trend : 'flat',
+      impact: Math.min(3, Math.max(1, Number(raw.impact) || 1)),
+      url,
+      published,
+    };
+  }).filter(Boolean);
+}
+
+async function loadNews() {
+  try {
+    const res = await fetch(NEWS_URL, { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const items = parseNewsFeed(data);
+    if (items.length < NEWS_PAGE_SIZE) throw new Error('zu wenige Meldungen');
+    const updated = new Date(data.updated);
+    newsState.items = items;
+    newsState.live = true;
+    newsState.updated = Number.isNaN(updated.getTime()) ? null : updated;
+  } catch {
+    newsState.items = NEWS_EXAMPLES;
+    newsState.live = false;
+  }
+  newsState.loading = false;
+  renderNews();
+}
+
+// Icon + Beschriftung der Einordnung: Richtung der Zahl (echte News) bzw. Marktstimmung (Beispiele).
+function newsSignal(item) {
+  return newsState.live ? TREND_META[item.trend] : SENTIMENT_META[item.sentiment];
+}
+
+// Seitenweise blättern; die letzte Seite darf kürzer sein (sonst würden Meldungen von Seite 1 doppelt auftauchen).
+function currentNewsPage() {
+  return newsState.items.slice(newsState.offset, newsState.offset + NEWS_PAGE_SIZE);
 }
 
 function renderNewsAiFazit(items) {
-  const counts = { bullish: 0, bearish: 0, neutral: 0 };
-  items.forEach(item => counts[item.sentiment]++);
-
   let text;
-  if (counts.bullish > counts.bearish && counts.bullish >= 2) {
-    text = 'Überwiegend positive Signale — die Chancen scheinen aktuell zu überwiegen.';
-  } else if (counts.bearish > counts.bullish && counts.bearish >= 2) {
-    text = 'Vorsicht angesagt — mehrere belastende Faktoren dominieren gerade das Bild.';
+  if (newsState.live) {
+    const up = items.filter(i => i.trend === 'up').length;
+    const down = items.filter(i => i.trend === 'down').length;
+    const parts = [];
+    if (up) parts.push(`${up} steigende`);
+    if (down) parts.push(`${down} sinkende`);
+    text = parts.length
+      ? `Von ${items.length} Meldungen auf dieser Seite zeigen ${parts.join(' und ')} Zahlen — eine Bestandsaufnahme, keine Kursprognose.`
+      : 'Auf dieser Seite melden die Quellen keine klaren Zahlen-Trends.';
   } else {
-    text = 'Gemischtes Bild — positive und negative Signale halten sich in etwa die Waage.';
+    const counts = { bullish: 0, bearish: 0, neutral: 0 };
+    items.forEach(item => counts[item.sentiment]++);
+    if (counts.bullish > counts.bearish && counts.bullish >= 2) {
+      text = 'Überwiegend positive Signale — die Chancen scheinen aktuell zu überwiegen.';
+    } else if (counts.bearish > counts.bullish && counts.bearish >= 2) {
+      text = 'Vorsicht angesagt — mehrere belastende Faktoren dominieren gerade das Bild.';
+    } else {
+      text = 'Gemischtes Bild — positive und negative Signale halten sich in etwa die Waage.';
+    }
   }
+  newsEls.fazit.innerHTML = `<span class="ai-badge">🤖 ${newsState.live ? 'Überblick' : 'KI-Fazit'}</span> ${text}`;
+}
 
-  document.getElementById('newsAiFazit').innerHTML = `<span class="ai-badge">🤖 KI-Fazit</span> ${text}`;
+// Ticker mit gleichbleibender Lesegeschwindigkeit, egal wie viele Schlagzeilen laufen.
+function updateTickerSpeed() {
+  const distance = newsEls.track.scrollWidth / 2;
+  if (distance > 0) newsEls.track.style.animationDuration = Math.max(20, distance / TICKER_PX_PER_SECOND) + 's';
+}
+
+function newsSourceLine(item) {
+  if (!newsState.live) return '<span class="news-source example">🧪 Beispielmeldung — frei erfunden</span>';
+  const lang = item.lang === 'en' ? ' <span class="news-lang" title="Englischsprachige Originalmeldung, unübersetzt">EN</span>' : '';
+  return `<span class="news-source">${escapeHtml(item.source)}${lang} · ${formatNewsAge(item.published)} · <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Weiterlesen ↗</a></span>`;
+}
+
+function newsHeadline(item, className) {
+  const lang = item.lang === 'en' ? ' lang="en"' : '';
+  if (!newsState.live) return `<span class="${className}">${escapeHtml(item.headline)}</span>`;
+  return `<a class="${className}" href="${escapeHtml(item.url)}"${lang} target="_blank" rel="noopener noreferrer">${escapeHtml(item.headline)}</a>`;
 }
 
 function renderNews() {
-  const items = pickRandomNews(4);
-  const [topStory, ...rest] = items;
+  newsEls.ticker.dataset.label = newsState.live || newsState.loading ? '📰 AKTUELL' : '🧪 BEISPIEL';
 
-  renderNewsAiFazit(items);
+  if (newsState.loading) {
+    newsEls.status.classList.add('hidden');
+    newsEls.fazit.innerHTML = '';
+    newsEls.top.innerHTML = '<p class="news-loading">Meldungen werden geladen …</p>';
+    newsEls.list.innerHTML = '';
+    newsEls.note.textContent = '';
+    newsEls.shuffle.disabled = true;
+    return;
+  }
 
-  const topEl = document.getElementById('newsTop');
-  const sentiment = SENTIMENT_META[topStory.sentiment];
-  topEl.innerHTML = `
+  const page = currentNewsPage();
+  // Top Story = relevanteste Meldung der Seite; bei Gleichstand die neuere (Liste ist nach Datum sortiert).
+  const topStory = page.reduce((best, item) => (item.impact > best.impact ? item : best), page[0]);
+  const rest = page.filter(item => item !== topStory);
+
+  renderNewsAiFazit(page);
+
+  newsEls.status.classList.toggle('hidden', newsState.live);
+  if (!newsState.live) {
+    newsEls.status.textContent = '⚠️ Die aktuellen Nachrichten konnten gerade nicht geladen werden. Du siehst frei erfundene Beispielmeldungen.';
+  }
+
+  const topSignal = newsSignal(topStory);
+  newsEls.top.innerHTML = `
     <div class="news-top-ribbon">🔥 Top Story</div>
-    <span class="news-chip category">${topStory.category}</span>
-    <span class="news-chip sentiment">${sentiment.icon} ${sentiment.label}</span>
-    <h3>${topStory.headline}</h3>
-    <p>${topStory.desc}</p>
+    <span class="news-chip category" data-cat="${escapeHtml(topStory.category)}">${escapeHtml(topStory.category)}</span>
+    <span class="news-chip sentiment">${topSignal.icon} ${topSignal.label}</span>
+    <h3>${newsHeadline(topStory, 'news-top-link')}</h3>
+    ${topStory.desc ? `<p>${escapeHtml(topStory.desc)}</p>` : ''}
+    ${newsSourceLine(topStory)}
   `;
 
-  const listEl = document.getElementById('newsList');
-  listEl.innerHTML = '';
+  newsEls.list.innerHTML = '';
   rest.forEach(item => {
-    const s = SENTIMENT_META[item.sentiment];
+    const signal = newsSignal(item);
     const li = document.createElement('li');
     li.innerHTML = `
       <div class="news-meta">
-        <span class="news-chip category">${item.category}</span>
-        <span class="news-chip sentiment">${s.icon}</span>
+        <span class="news-chip category" data-cat="${escapeHtml(item.category)}">${escapeHtml(item.category)}</span>
+        <span class="news-chip sentiment" title="${signal.label}">${signal.icon}</span>
         <span class="news-impact" title="Marktrelevanz">${'🔥'.repeat(item.impact)}</span>
       </div>
-      <span class="info-headline">${item.headline}</span>
-      <span class="info-desc">${item.desc}</span>
+      ${newsHeadline(item, 'info-headline')}
+      ${item.desc ? `<span class="info-desc">${escapeHtml(item.desc)}</span>` : ''}
+      ${newsSourceLine(item)}
     `;
-    listEl.appendChild(li);
+    newsEls.list.appendChild(li);
   });
 
-  const trackEl = document.getElementById('tickerTrack');
-  const tickerText = NEWS_POOL.map(n => `${SENTIMENT_META[n.sentiment].icon} ${n.headline}`).join('   ★   ');
-  trackEl.textContent = tickerText + '   ★   ' + tickerText;
+  if (newsState.live) {
+    const stand = newsState.updated
+      ? ` · Stand: ${newsState.updated.toLocaleString('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })} Uhr`
+      : '';
+    const sources = NEWS_SOURCES_NOTE.map(s => `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.name)}</a>`).join(' und ');
+    newsEls.note.innerHTML = `Quellen: ${sources}${stand}. Thema, Richtung der Zahl (📈/📉) und Relevanz (🔥) hat die App automatisch aus dem Text abgeleitet — sie stammen nicht von den Quellen und sind keine Kursprognose. Keine Anlageberatung.`;
+  } else {
+    newsEls.note.textContent = 'Beispielmeldungen, frei erfunden. Keine Anlageberatung.';
+  }
+  newsEls.shuffle.textContent = newsState.live ? '🔄 Weitere Meldungen' : '🔀 Neue Meldungen';
+  newsEls.shuffle.disabled = false;
+
+  const tickerItems = newsState.live ? newsState.items.slice(0, TICKER_MAX_ITEMS) : newsState.items;
+  const tickerText = tickerItems.map(n => `${newsSignal(n).icon} ${n.headline}`).join('   ★   ');
+  newsEls.track.textContent = tickerText + '   ★   ' + tickerText;
+  updateTickerSpeed();
 }
 
-document.getElementById('newsShuffle').addEventListener('click', renderNews);
+newsEls.shuffle.addEventListener('click', () => {
+  const next = newsState.offset + NEWS_PAGE_SIZE;
+  newsState.offset = next < newsState.items.length ? next : 0;
+  renderNews();
+});
 renderNews();
+loadNews();
 
 // --- Lernen: Quiz ---
 

@@ -1,0 +1,126 @@
+{
+  "updated": "2026-09-20T18:55:33Z",
+  "items": [
+    {
+      "headline": "ECB Consumer Expectations Survey results – August 2026",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html",
+      "published": "2026-09-18T08:00:00Z"
+    },
+    {
+      "headline": "Erzeugerpreise im August 2026: +4,6 % gegenüber August 2025",
+      "desc": "Die Erzeugerpreise gewerblicher Produkte waren im August 2026 um 4,6 % höher als im August 2025. Wie das Statistische Bundesamt (Destatis) weiter mitteilt, stiegen die Erzeugerpreise im …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_328_61241.html",
+      "published": "2026-09-18T06:00:00Z"
+    },
+    {
+      "headline": "Gastgewerbeumsatz im Juli 2026 real 1,5 % höher als im Vormonat",
+      "desc": "Das Gastgewerbe in Deutschland hat im Juli 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,5 % und nominal …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_331_45213.html",
+      "published": "2026-09-18T06:00:00Z"
+    },
+    {
+      "headline": "Erzeugerpreise für Dienstleistungen im 2. Quartal 2026: +3,7 % zum Vorjahresquartal",
+      "desc": "Die Erzeugerpreise für Dienstleistungen in Deutschland lagen im 2. Quartal 2026 um 3,7 % höher als im 2. Quartal 2025. Einen stärkeren Anstieg der Erzeugerpreise für Dienstleistungen hatte …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_329_61311.html",
+      "published": "2026-09-18T06:00:00Z"
+    },
+    {
+      "headline": "Baugenehmigungen für Wohnungen im Juli 2026: +1,9 % zum Vorjahresmonat",
+      "desc": "Im Juli 2026 wurde in Deutschland der Bau von 22 500 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 1,9 % oder 400 Baugenehmigungen mehr als im Juli …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_330_3111.html",
+      "published": "2026-09-18T06:00:00Z"
+    },
+    {
+      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im Juli 2026: +1,5 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im Juli 2026 gegenüber Juni 2026 saison- und …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_327_421.html",
+      "published": "2026-09-17T06:00:00Z"
+    },
+    {
+      "headline": "ECB wage tracker at 2.7% in H1 2027, pointing to a modest uptick in negotiated wage growth",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260916~7bc58ebef4.en.html",
+      "published": "2026-09-16T08:00:00Z"
+    },
+    {
+      "headline": "Sanitär-, Heizungs- und Klimatechnik: Zahl der neuen Auszubildenden binnen zehn Jahren um 30,5 % gestiegen",
+      "desc": "Egal ob Wärmepumpen oder Klimaanlagen – für die Installation und Wartung solcher Geräte braucht es entsprechend ausgebildete Fachkräfte. Wie das Statistische Bundesamt (Destatis) mitteilt …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N064_47_21.html",
+      "published": "2026-09-16T06:00:00Z"
+    },
+    {
+      "headline": "Großhandelspreise im August 2026: +6,8 % gegenüber August 2025",
+      "desc": "Die Verkaufspreise im Großhandel waren im August 2026 um 6,8 % höher als im August 2025. Im Juli 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei +5,3 % gelegen, im Juni …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_326_61281.html",
+      "published": "2026-09-15T06:00:00Z"
+    },
+    {
+      "headline": "3,8 Millionen Menschen leben in Haushalten mit Zahlungsrückständen bei Versorgungsbetrieben",
+      "desc": "Das Begleichen von Strom- oder Gasrechnungen stellt für einige Menschen eine finanzielle Herausforderung dar. Rund 3,8 Millionen Menschen lebten im Jahr 2025 nach eigenen Angaben in …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N063_63.html",
+      "published": "2026-09-14T06:00:00Z"
+    },
+    {
+      "headline": "Monetary policy decisions",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 3,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html",
+      "published": "2026-09-10T12:15:00Z"
+    }
+  ]
+}

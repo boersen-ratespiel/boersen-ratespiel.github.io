@@ -95,9 +95,11 @@
     <section id="news-view" class="view hidden">
       <button class="back-btn">← Zurück</button>
 
-      <div class="ticker">
+      <div class="ticker" data-label="📰 AKTUELL">
         <div id="tickerTrack" class="ticker-track"></div>
       </div>
+
+      <p id="newsStatus" class="news-status hidden" role="status"></p>
 
       <div id="newsAiFazit" class="ai-fazit"></div>
 
@@ -105,11 +107,11 @@
 
       <div class="panel">
         <div class="depot-panel-head">
-          <h2>📰 Markt-News</h2>
+          <h2>📰 Meldungen</h2>
           <button id="newsShuffle" class="mini-btn">🔀 Neue Meldungen</button>
         </div>
         <ul id="newsList" class="info-list news-feed"></ul>
-        <p class="panel-note">Kurz zusammengefasst, damit du nicht alles selbst durchlesen musst. Keine Anlageberatung.</p>
+        <p id="newsNote" class="panel-note"></p>
       </div>
     </section>
 
@@ -224,7 +226,7 @@
   </div>
 
   <div id="confirmModal" class="modal-overlay hidden">
-    <div class="modal-panel">
+    <div class="modal-panel" role="alertdialog" aria-modal="true" aria-describedby="confirmModalText">
       <p id="confirmModalText"></p>
       <div class="controls">
         <button id="confirmModalCancel" class="mini-btn">Abbrechen</button>
@@ -234,7 +236,7 @@
   </div>
 
   <div id="aiModal" class="modal-overlay hidden">
-    <div class="modal-panel ai-panel">
+    <div class="modal-panel ai-panel" role="dialog" aria-modal="true" aria-label="KI-Berater">
       <div class="ai-chat-header">
         <span class="ai-avatar">🤖</span>
         <span class="ai-chat-title">KI-Berater</span>
