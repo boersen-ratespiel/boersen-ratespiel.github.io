@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
   <div class="app">
     <header>
@@ -39,6 +40,15 @@
         ausschließlich lokal in deinem Browser gespeichert (Web-Storage-API, „localStorage"). Diese Daten verlassen
         deinen Browser nicht, werden nicht an mich oder Dritte übertragen und lassen sich jederzeit über die
         Browser-Einstellungen oder durch Löschen der Website-Daten entfernen.
+      </p>
+
+      <h2>Nachrichten (Destatis, EZB)</h2>
+      <p>
+        Die Meldungen im Bereich „News" werden regelmäßig automatisch auf dem Server von GitHub (GitHub Actions) beim
+        Statistischen Bundesamt und bei der Europäischen Zentralbank abgerufen und als Datei (<code>news.json</code>)
+        zusammen mit dieser Seite ausgeliefert. Beim Aufruf der App werden deshalb keine Daten von dir an Destatis oder
+        die EZB übertragen. Erst wenn du auf den Link zu einer Meldung klickst, verlässt du diese Anwendung; dann gilt die
+        Datenschutzerklärung des jeweiligen Anbieters.
       </p>
 
       <h2>Schriftarten</h2>

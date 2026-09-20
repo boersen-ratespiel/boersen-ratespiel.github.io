@@ -1,4 +1,4 @@
-const CACHE_NAME = 'boersenspiel-v2';
+const CACHE_NAME = 'boersenspiel-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -30,6 +30,19 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) {
+    return;
+  }
+  // Nachrichten: network-first, damit sie aktuell bleiben. Offline greift die zuletzt geladene Version.
+  if (new URL(event.request.url).pathname.endsWith('/news.json')) {
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        if (response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        }
+        return response;
+      }).catch(() => caches.match(event.request))
+    );
     return;
   }
   event.respondWith(
