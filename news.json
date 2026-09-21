@@ -1,6 +1,28 @@
 {
-  "updated": "2026-09-21T06:19:14Z",
+  "updated": "2026-09-21T14:07:02Z",
   "items": [
+    {
+      "headline": "ECB to invest part of own funds in tokenised securities, with settlement via Pontes",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921_1~5a011ecbea.en.html",
+      "published": "2026-09-21T10:00:00Z"
+    },
+    {
+      "headline": "Eurosystem brings central bank money to tokenised finance",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921~e754847a7b.en.html",
+      "published": "2026-09-21T10:00:00Z"
+    },
     {
       "headline": "Kirschenernte 2026 um 7,8 % über Zehnjahresdurchschnitt",
       "desc": "Die deutschen Obstbaubetriebe haben im Sommer 2026 eine gute Kirschenernte erzielt. Wie das Statistische Bundesamt (Destatis) nach endgültigen Schätzungen zum Stichtag 20. August 2026 …",
@@ -46,17 +68,6 @@
       "published": "2026-09-18T06:00:00Z"
     },
     {
-      "headline": "Gastgewerbeumsatz im Juli 2026 real 1,5 % höher als im Vormonat",
-      "desc": "Das Gastgewerbe in Deutschland hat im Juli 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,5 % und nominal …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_331_45213.html",
-      "published": "2026-09-18T06:00:00Z"
-    },
-    {
       "headline": "Erzeugerpreise für Dienstleistungen im 2. Quartal 2026: +3,7 % zum Vorjahresquartal",
       "desc": "Die Erzeugerpreise für Dienstleistungen in Deutschland lagen im 2. Quartal 2026 um 3,7 % höher als im 2. Quartal 2025. Einen stärkeren Anstieg der Erzeugerpreise für Dienstleistungen hatte …",
       "source": "Statistisches Bundesamt (Destatis)",
@@ -76,6 +87,17 @@
       "trend": "up",
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_330_3111.html",
+      "published": "2026-09-18T06:00:00Z"
+    },
+    {
+      "headline": "Gastgewerbeumsatz im Juli 2026 real 1,5 % höher als im Vormonat",
+      "desc": "Das Gastgewerbe in Deutschland hat im Juli 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,5 % und nominal …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_331_45213.html",
       "published": "2026-09-18T06:00:00Z"
     },
     {
