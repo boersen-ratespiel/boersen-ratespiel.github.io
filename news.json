@@ -1,6 +1,28 @@
 {
-  "updated": "2026-09-20T18:55:33Z",
+  "updated": "2026-09-21T06:19:14Z",
   "items": [
+    {
+      "headline": "Kirschenernte 2026 um 7,8 % über Zehnjahresdurchschnitt",
+      "desc": "Die deutschen Obstbaubetriebe haben im Sommer 2026 eine gute Kirschenernte erzielt. Wie das Statistische Bundesamt (Destatis) nach endgültigen Schätzungen zum Stichtag 20. August 2026 …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_334_412.html",
+      "published": "2026-09-21T06:00:00Z"
+    },
+    {
+      "headline": "Exporte von neuen Pkw in den ersten sieben Monaten 2026 um 4,0 % zum Vorjahreszeitraum gesunken",
+      "desc": "Von Januar bis Juli 2026 wurden rund 2,0 Millionen neue Pkw im Wert von 73,5 Milliarden Euro aus Deutschland exportiert. Wie das Statistische Bundesamt (Destatis) mitteilt, sanken im …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_332_51.html",
+      "published": "2026-09-21T06:00:00Z"
+    },
     {
       "headline": "ECB Consumer Expectations Survey results – August 2026",
       "desc": "",
@@ -88,28 +110,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N064_47_21.html",
       "published": "2026-09-16T06:00:00Z"
-    },
-    {
-      "headline": "Großhandelspreise im August 2026: +6,8 % gegenüber August 2025",
-      "desc": "Die Verkaufspreise im Großhandel waren im August 2026 um 6,8 % höher als im August 2025. Im Juli 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei +5,3 % gelegen, im Juni …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_326_61281.html",
-      "published": "2026-09-15T06:00:00Z"
-    },
-    {
-      "headline": "3,8 Millionen Menschen leben in Haushalten mit Zahlungsrückständen bei Versorgungsbetrieben",
-      "desc": "Das Begleichen von Strom- oder Gasrechnungen stellt für einige Menschen eine finanzielle Herausforderung dar. Rund 3,8 Millionen Menschen lebten im Jahr 2025 nach eigenen Angaben in …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N063_63.html",
-      "published": "2026-09-14T06:00:00Z"
     },
     {
       "headline": "Monetary policy decisions",
