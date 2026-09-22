@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-21T14:07:02Z",
+  "updated": "2026-09-22T07:41:56Z",
   "items": [
+    {
+      "headline": "Öffentliches Finanzvermögen steigt im Jahr 2025 um 5,9 %",
+      "desc": "Der Öffentliche Gesamthaushalt (Bund, Länder, Gemeinden und Gemeindeverbände sowie Sozialversicherung einschließlich aller Extrahaushalte) wies gegenüber dem nicht-öffentlichen Bereich zum …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_335_71411.html",
+      "published": "2026-09-22T06:00:00Z"
+    },
     {
       "headline": "ECB to invest part of own funds in tokenised securities, with settlement via Pontes",
       "desc": "",
@@ -101,17 +112,6 @@
       "published": "2026-09-18T06:00:00Z"
     },
     {
-      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im Juli 2026: +1,5 % zum Vormonat",
-      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im Juli 2026 gegenüber Juni 2026 saison- und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_327_421.html",
-      "published": "2026-09-17T06:00:00Z"
-    },
-    {
       "headline": "ECB wage tracker at 2.7% in H1 2027, pointing to a modest uptick in negotiated wage growth",
       "desc": "",
       "source": "Europäische Zentralbank (EZB)",
@@ -121,17 +121,6 @@
       "impact": 2,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260916~7bc58ebef4.en.html",
       "published": "2026-09-16T08:00:00Z"
-    },
-    {
-      "headline": "Sanitär-, Heizungs- und Klimatechnik: Zahl der neuen Auszubildenden binnen zehn Jahren um 30,5 % gestiegen",
-      "desc": "Egal ob Wärmepumpen oder Klimaanlagen – für die Installation und Wartung solcher Geräte braucht es entsprechend ausgebildete Fachkräfte. Wie das Statistische Bundesamt (Destatis) mitteilt …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "up",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N064_47_21.html",
-      "published": "2026-09-16T06:00:00Z"
     },
     {
       "headline": "Monetary policy decisions",
