@@ -1,0 +1,89 @@
+{
+  "updated": "2026-09-22T19:16:34Z",
+  "items": [
+    {
+      "date": "2026-09-22",
+      "time": "08:00",
+      "title": "Finanzvermögen des Öffentlichen Gesamthaushalts",
+      "period": "Jahr 2025",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-24",
+      "time": "08:00",
+      "title": "Preise für Wohnimmobilien (Häuserpreisindex)",
+      "period": "2. Quartal 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "08:00",
+      "title": "Arbeitskosten im Bundesländervergleich",
+      "period": "Jahr 2024",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "08:00",
+      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
+      "period": "Juli 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "14:30",
+      "title": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025",
+      "period": "",
+      "hint": "US-Wirtschaftsleistung (BIP)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "14:30",
+      "title": "Personal Income and Outlays, August 2026",
+      "period": "",
+      "hint": "Einkommen und Konsum in den USA, inkl. PCE-Inflation (wichtigstes Inflationsmaß der Fed)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-10-06",
+      "time": "14:30",
+      "title": "U.S. International Trade in Goods and Services, August 2026",
+      "period": "",
+      "hint": "Außenhandel der USA",
+      "region": "US",
+      "key": false,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    }
+  ]
+}
