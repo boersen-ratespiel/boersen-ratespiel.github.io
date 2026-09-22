@@ -1,7 +1,8 @@
 name: Update news
 
-# Holt regelmäßig die aktuellen Wirtschaftsmeldungen (RSS von Destatis und EZB), schreibt news.json
-# und committet sie nur, wenn sich etwas geändert hat. Die Seite selbst bleibt rein statisch.
+# Holt regelmäßig die aktuellen Wirtschaftsmeldungen (RSS von Destatis und EZB) und die Termine der nächsten Tage
+# (Destatis, BEA, EZB, Fed), schreibt news.json/termine.json und committet nur, wenn sich etwas geändert hat.
+# Die Seite selbst bleibt rein statisch.
 on:
   schedule:
     - cron: '17 * * * *' # stündlich, bewusst nicht zur vollen Stunde (dort ist GitHub Actions überlastet)
@@ -27,14 +28,18 @@ jobs:
       - name: Fetch news
         run: python3 scripts/update_news.py
 
-      - name: Commit news.json if changed
+      - name: Fetch calendar
+        continue-on-error: true # fallen die Termine aus, sollen die News trotzdem aktualisiert werden
+        run: python3 scripts/update_termine.py
+
+      - name: Commit news.json and termine.json if changed
         run: |
-          if git diff --quiet -- news.json && [ -z "$(git ls-files --others --exclude-standard -- news.json)" ]; then
-            echo "news.json unverändert."
+          if git diff --quiet -- news.json termine.json && [ -z "$(git ls-files --others --exclude-standard -- news.json termine.json)" ]; then
+            echo "news.json und termine.json unverändert."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json
-          git commit -m "Update news.json"
+          git add news.json termine.json
+          git commit -m "Update news"
           git push

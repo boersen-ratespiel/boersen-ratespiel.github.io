@@ -853,6 +853,125 @@ newsEls.shuffle.addEventListener('click', () => {
 renderNews();
 loadNews();
 
+// --- Termine (Wochenvorschau) ---
+
+// termine.json erzeugt scripts/update_termine.py aus frei nutzbaren Kalendern (Destatis, BEA, EZB, Fed). Anders als
+// bei den News gibt es hier bewusst KEINE erfundenen Ersatz-Termine: Fehlt die Datei, bleibt das Panel einfach weg.
+const TERMINE_URL = 'termine.json';
+const TERMINE_DAYS = 7;
+const TERMINE_LINK_HOSTS = ['www.destatis.de', 'www.bea.gov', 'www.ecb.europa.eu', 'www.federalreserve.gov'];
+const TERMINE_SOURCES_NOTE = [
+  { name: 'Destatis', url: 'https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html' },
+  { name: 'U.S. Bureau of Economic Analysis', url: 'https://www.bea.gov/news/schedule' },
+  { name: 'EZB', url: 'https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html' },
+  { name: 'Federal Reserve', url: 'https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm' },
+];
+const TERMINE_REGIONS = { DE: '🇩🇪', EU: '🇪🇺', US: '🇺🇸' };
+const TERMINE_WEEKDAYS = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+
+const termineEls = {
+  panel: document.getElementById('terminePanel'),
+  list: document.getElementById('termineList'),
+  note: document.getElementById('termineNote'),
+};
+
+function textField(value, max) {
+  return typeof value === 'string' ? value.trim().slice(0, max) : '';
+}
+
+// Prüft jeden Eintrag aus termine.json und lässt nur bekannte, harmlose Werte durch (wie parseNewsFeed()).
+function parseTermine(data) {
+  const items = Array.isArray(data && data.items) ? data.items : [];
+  return items.map(raw => {
+    let url = null;
+    try {
+      const u = new URL(raw.url);
+      if (u.protocol === 'https:' && TERMINE_LINK_HOSTS.includes(u.hostname)) url = u.href;
+    } catch (e) { /* ungültiger Link */ }
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(raw && raw.date);
+    const title = textField(raw && raw.title, 240);
+    if (!url || !m || !title) return null;
+    return {
+      day: new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3])),
+      time: /^\d{2}:\d{2}$/.test(raw.time) ? raw.time : '',
+      title,
+      period: textField(raw.period, 60),
+      hint: textField(raw.hint, 160),
+      region: TERMINE_REGIONS[raw.region] ? raw.region : null,
+      key: raw.key === true,
+      source: textField(raw.source, 80),
+      lang: raw.lang === 'en' ? 'en' : 'de',
+      url,
+    };
+  }).filter(Boolean);
+}
+
+function termineDayLabel(day, today) {
+  const diff = Math.round((day - today) / 86400000);
+  const date = day.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' });
+  if (diff === 0) return `Heute · ${date}`;
+  if (diff === 1) return `Morgen · ${date}`;
+  return `${TERMINE_WEEKDAYS[day.getDay()]} · ${date}`;
+}
+
+function renderTermine(items) {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const end = new Date(today.getFullYear(), today.getMonth(), today.getDate() + TERMINE_DAYS);
+  const upcoming = items
+    .filter(t => t.day >= today && t.day < end)
+    .sort((a, b) => a.day - b.day || (a.time || '99:99').localeCompare(b.time || '99:99'));
+
+  const byDay = new Map();
+  upcoming.forEach(t => {
+    const k = t.day.getTime();
+    if (!byDay.has(k)) byDay.set(k, []);
+    byDay.get(k).push(t);
+  });
+
+  termineEls.list.innerHTML = byDay.size ? '' : '<p class="news-loading">Bei unseren Quellen stehen in den nächsten 7 Tagen keine Termine an.</p>';
+  byDay.forEach((dayItems, k) => {
+    const day = new Date(k);
+    const group = document.createElement('div');
+    group.className = 'termine-day' + (day.getTime() === today.getTime() ? ' today' : '');
+    group.innerHTML = `<h3 class="termine-day-label">${termineDayLabel(day, today)}</h3>`;
+    const ul = document.createElement('ul');
+    ul.className = 'termine-list';
+    dayItems.forEach(t => {
+      const li = document.createElement('li');
+      if (t.key) li.classList.add('key');
+      const lang = t.lang === 'en' ? ' <span class="news-lang" title="Englischsprachiger Originaltitel, unübersetzt">EN</span>' : '';
+      li.innerHTML = `
+        <span class="termine-time">${t.time ? escapeHtml(t.time) : '—'}</span>
+        <div class="termine-body">
+          <span class="termine-title">${t.region ? `<span class="termine-flag" aria-hidden="true">${TERMINE_REGIONS[t.region]}</span> ` : ''}${escapeHtml(t.title)}${lang}${t.key ? ' <span class="termine-key" title="Von der App als besonders marktrelevant markiert">⭐ wichtig</span>' : ''}</span>
+          ${t.period ? `<span class="termine-sub">Zeitraum: ${escapeHtml(t.period)}</span>` : ''}
+          ${t.hint ? `<span class="termine-sub">💡 ${escapeHtml(t.hint)}</span>` : ''}
+          <span class="news-source">${escapeHtml(t.source)} · <a href="${escapeHtml(t.url)}" target="_blank" rel="noopener noreferrer">Kalender ↗</a></span>
+        </div>
+      `;
+      ul.appendChild(li);
+    });
+    group.appendChild(ul);
+    termineEls.list.appendChild(group);
+  });
+
+  const sources = TERMINE_SOURCES_NOTE.map(s => `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.name)}</a>`).join(', ');
+  termineEls.note.innerHTML = `Quellen: ${sources}. Uhrzeiten in deutscher Zeit, Termine können sich kurzfristig ändern. Erklärungen (💡) und die Markierung „wichtig“ stammen von der App, nicht von den Quellen. Nicht enthalten sind ifo-Index, Einkaufsmanagerindizes, US-Arbeitsmarktdaten und Quartalszahlen von Unternehmen, weil es dafür keine frei nutzbare Quelle gibt. Keine Anlageberatung.`;
+  termineEls.panel.classList.remove('hidden');
+}
+
+async function loadTermine() {
+  try {
+    const res = await fetch(TERMINE_URL, { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    renderTermine(parseTermine(await res.json()));
+  } catch (e) {
+    termineEls.panel.classList.add('hidden');
+  }
+}
+loadTermine();
+
 // --- Lernen: Quiz ---
 
 const LEARN_BEST_KEY = 'boersenspiel_learn_best';
