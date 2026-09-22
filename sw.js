@@ -1,4 +1,4 @@
-const CACHE_NAME = 'boersenspiel-v3';
+const CACHE_NAME = 'boersenspiel-v4';
 const APP_SHELL = [
   './',
   './index.html',

@@ -871,6 +871,60 @@ a.news-top-link:hover { text-decoration: underline; text-underline-offset: 3px; 
 
 .depot-reset-hint { margin-top: 14px; }
 
+/* Musterdepot: Broker-Empfehlung (Werbung/Partnerlinks) */
+
+.broker-cta {
+  position: relative;
+  margin-top: 14px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.12), rgba(16, 185, 129, 0.06));
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.broker-cta-badge {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.broker-cta-title { margin: 0 0 8px; padding-right: 70px; }
+.broker-cta-text { margin: 0 0 14px; color: var(--muted); }
+
+.broker-cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.broker-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(52, 211, 153, 0.18);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.broker-cta-btn:hover { background: rgba(52, 211, 153, 0.28); transform: translateY(-1px); }
+.broker-cta-btn:active { transform: translateY(0) scale(0.97); }
+.broker-cta-arrow { color: var(--green); }
+
+.broker-cta-disclaimer { margin: 0; font-size: 0.72rem; color: var(--muted); }
+
 /* Lernen: Quiz */
 
 .quiz-intro { margin: 0 0 16px; text-align: left; }
