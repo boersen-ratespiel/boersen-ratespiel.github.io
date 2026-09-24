@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-23T16:56:25Z",
+  "updated": "2026-09-24T09:59:33Z",
   "items": [
+    {
+      "headline": "Preise für Wohnimmobilien im 2. Quartal 2026: +0,6 % zum Vorjahresquartal",
+      "desc": "Die Preise für Wohnimmobilien (Häuserpreisindex) in Deutschland sind im 2. Quartal 2026 um durchschnittlich 0,6 % gegenüber dem 2. Quartal 2025 gestiegen. Gegenüber dem 1. Quartal 2026 …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_336_61262.html",
+      "published": "2026-09-24T06:00:00Z"
+    },
     {
       "headline": "Almost ten million people took part in ECB survey on new euro banknotes",
       "desc": "",
@@ -109,17 +120,6 @@
       "trend": "up",
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_330_3111.html",
-      "published": "2026-09-18T06:00:00Z"
-    },
-    {
-      "headline": "Gastgewerbeumsatz im Juli 2026 real 1,5 % höher als im Vormonat",
-      "desc": "Das Gastgewerbe in Deutschland hat im Juli 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,5 % und nominal …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_331_45213.html",
       "published": "2026-09-18T06:00:00Z"
     },
     {
