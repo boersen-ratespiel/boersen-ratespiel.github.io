@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-24T22:23:04Z",
+  "updated": "2026-09-25T13:45:46Z",
   "items": [
     {
-      "date": "2026-09-25",
+      "date": "2026-09-28",
       "time": "08:00",
-      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
-      "period": "Juli 2026",
+      "title": "Beschäftigte mit Einwanderungsgeschichte in Engpassberufen sowie Erwerbstätigenquoten Eingewanderter nach Aufenthaltsdauer und Herkunftsregion",
+      "period": "Jahr 2025",
       "hint": "",
       "region": "DE",
       "key": false,
@@ -14,13 +14,73 @@
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
-      "date": "2026-09-25",
+      "date": "2026-09-29",
       "time": "08:00",
-      "title": "VERSCHOBEN: NEUER TERMIN WIRD NOCH BEKANNT GEGEBEN / Arbeitskosten im Bundesländervergleich",
-      "period": "Jahr 2024",
+      "title": "Schulden des Öffentlichen Gesamthaushalts (vorläufige Ergebnisse)",
+      "period": "2. Quartal 2026",
       "hint": "",
       "region": "DE",
       "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "08:00",
+      "title": "Außenhandelspreise",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "08:00",
+      "title": "Durchschnittspreise für Strom und Erdgas",
+      "period": "1. Halbjahr 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "08:00",
+      "title": "Monatliche Arbeitsmarktstatistik (Erwerbstätige, Erwerbslose, Erwerbslosenquote)",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "08:00",
+      "title": "Umsatz im Einzelhandel",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "08:00",
+      "title": "Verbraucherpreisindex (inklusive Harmonisierter Verbraucherpreisindex), vorläufige Ergebnisse (im Laufe des Tages)",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": true,
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
@@ -48,6 +108,30 @@
       "source": "U.S. Bureau of Economic Analysis (BEA)",
       "lang": "en",
       "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-10-01",
+      "time": "08:00",
+      "title": "Außenhandel mit und Produktion von Benzin und Diesel",
+      "period": "1. Halbjahr 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-01",
+      "time": "08:00",
+      "title": "Kommunale Haushalte (Gemeindefinanzen, vierteljährliche Kassenstatistik)",
+      "period": "1. Halbjahr 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
       "date": "2026-10-06",
