@@ -1,6 +1,28 @@
 {
-  "updated": "2026-09-24T15:04:42Z",
+  "updated": "2026-09-25T07:46:37Z",
   "items": [
+    {
+      "headline": "1,3 Millionen Wohngeldhaushalte im Jahr 2025",
+      "desc": "Am Jahresende 2025 haben rund 1,3 Millionen Haushalte in Deutschland Wohngeld bezogen. Das waren 7,2 % oder rund 90 000 Haushalte mehr als ein Jahr zuvor. Wie das Statistische Bundesamt …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_339_22311.html",
+      "published": "2026-09-25T06:00:00Z"
+    },
+    {
+      "headline": "Auftragseingang im Bauhauptgewerbe im Juli 2026: -9,2 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragseingang im Bauhauptgewerbe ist im Juli 2026 gegenüber Juni 2026 kalender- und saisonbereinigt um 9,2 % gefallen. Wie das Statistische Bundesamt …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_338_441.html",
+      "published": "2026-09-25T06:00:00Z"
+    },
     {
       "headline": "ECB Executive Board member Isabel Schnabel to resign to take senior role at IMF",
       "desc": "",
@@ -109,28 +131,6 @@
       "trend": "up",
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_328_61241.html",
-      "published": "2026-09-18T06:00:00Z"
-    },
-    {
-      "headline": "Erzeugerpreise für Dienstleistungen im 2. Quartal 2026: +3,7 % zum Vorjahresquartal",
-      "desc": "Die Erzeugerpreise für Dienstleistungen in Deutschland lagen im 2. Quartal 2026 um 3,7 % höher als im 2. Quartal 2025. Einen stärkeren Anstieg der Erzeugerpreise für Dienstleistungen hatte …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_329_61311.html",
-      "published": "2026-09-18T06:00:00Z"
-    },
-    {
-      "headline": "Baugenehmigungen für Wohnungen im Juli 2026: +1,9 % zum Vorjahresmonat",
-      "desc": "Im Juli 2026 wurde in Deutschland der Bau von 22 500 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 1,9 % oder 400 Baugenehmigungen mehr als im Juli …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_330_3111.html",
       "published": "2026-09-18T06:00:00Z"
     },
     {
