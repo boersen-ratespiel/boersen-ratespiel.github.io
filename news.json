@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T11:45:43Z",
+  "updated": "2026-10-13T19:15:40Z",
   "items": [
     {
       "headline": "Inflationsrate im September 2026 bei +3,3 %",
@@ -77,17 +77,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
       "published": "2026-10-07T08:00:00Z"
-    },
-    {
-      "headline": "ECB amends monetary policy implementation guidelines as part of regular review",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Geldpolitik",
-      "trend": "flat",
-      "impact": 3,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260929~050089e922.en.html",
-      "published": "2026-09-29T08:00:00Z"
     }
   ]
 }
