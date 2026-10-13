@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-09T09:01:25Z",
+  "updated": "2026-10-13T11:45:43Z",
   "items": [
+    {
+      "headline": "Inflationsrate im September 2026 bei +3,3 %",
+      "desc": "Die Inflationsrate in Deutschland – gemessen als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat – lag im September 2026 bei +3,3 %. Damit hat sich die Teuerung der …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 3,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html",
+      "published": "2026-10-13T06:00:00Z"
+    },
+    {
+      "headline": "10 % weniger Lebkuchen im Jahr 2025 in Deutschland produziert",
+      "desc": "Bis zur Weihnachtszeit ist noch etwas Zeit, doch die Supermarktregale sind schon gut mit Lebkuchen gefüllt - und in der Produktion herrscht längst Hochsaison. Im Jahr 2025 wurden in …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_42_p002.html",
+      "published": "2026-10-13T06:00:00Z"
+    },
+    {
+      "headline": "KORREKTUR: Voraussichtliche Weinernte 2026 liegt 4 % unter dem Durchschnitt der Vorjahre",
+      "desc": "Die Weinbaubetriebe in Deutschland erwarten für 2026 eine um 0,3 Millionen Hektoliter beziehungsweise 4 % niedrigere Ernte als im Durchschnitt der Jahre 2020 bis 2025. Wie das Statistische …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "down",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_366_412.html",
+      "published": "2026-10-13T06:00:00Z"
+    },
     {
       "headline": "Unternehmensinsolvenzen im Juli 2026: +8,0 % gegenüber Juli 2025",
       "desc": "Im Juli 2026 haben die deutschen Amtsgerichte 2 373 beantragte Unternehmensinsolvenzen registriert. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 8,0 % mehr als im …",
@@ -35,17 +68,6 @@
       "published": "2026-10-08T06:00:00Z"
     },
     {
-      "headline": "Krankheitskosten im Jahr 2024 um 7,6 % gestiegen",
-      "desc": "Krankheiten und Gesundheitsprobleme haben im Jahr 2024 in Deutschland direkte Kosten von 528,5 Milliarden Euro verursacht. Wie das Statistische Bundesamt (Destatis) mitteilt, stiegen die …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "up",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_359_236.html",
-      "published": "2026-10-08T06:00:00Z"
-    },
-    {
       "headline": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
       "desc": "",
       "source": "Europäische Zentralbank (EZB)",
@@ -55,28 +77,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
       "published": "2026-10-07T08:00:00Z"
-    },
-    {
-      "headline": "Einnahmen aus Hundesteuer stagnieren 2025 auf hohem Niveau",
-      "desc": "Hundehaltung bringt dem Staat weiter hohe Einnahmen, wenn auch der stetige Zuwachs der Vorjahre gestoppt ist. Wie das Statistische Bundesamt (Destatis) anlässlich des Welthundetags am 10. …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N069_73.html",
-      "published": "2026-10-07T06:00:00Z"
-    },
-    {
-      "headline": "Produktion im August 2026: +2,0 % zum Vormonat",
-      "desc": "Die reale (preisbereinigte) Produktion im Produzierenden Gewerbe ist nach vorläufigen Angaben des Statistischen Bundesamtes (Destatis) im August 2026 gegenüber Juli 2026 saison- und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_355_421.html",
-      "published": "2026-10-07T06:00:00Z"
     },
     {
       "headline": "ECB amends monetary policy implementation guidelines as part of regular review",
