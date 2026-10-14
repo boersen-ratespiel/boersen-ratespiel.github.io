@@ -1,6 +1,28 @@
 {
-  "updated": "2026-10-13T19:15:40Z",
+  "updated": "2026-10-14T10:10:45Z",
   "items": [
+    {
+      "headline": "Erzeugerpreise landwirtschaftlicher Produkte im August 2026: -7,0 % gegenüber August 2025",
+      "desc": "Die Erzeugerpreise landwirtschaftlicher Produkte waren im August 2026 um 7,0 % niedriger als im August 2025. Im Juli 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei -13,7 % …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_367_61211.html",
+      "published": "2026-10-14T06:00:00Z"
+    },
+    {
+      "headline": "Großhandelspreise im September 2026: +8,7 % gegenüber September 2025",
+      "desc": "Die Verkaufspreise im Großhandel waren im September 2026 um 8,7 % höher als im September 2025. Im August 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei +6,8 % gelegen, im …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_368_61281.html",
+      "published": "2026-10-14T06:00:00Z"
+    },
     {
       "headline": "Inflationsrate im September 2026 bei +3,3 %",
       "desc": "Die Inflationsrate in Deutschland – gemessen als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat – lag im September 2026 bei +3,3 %. Damit hat sich die Teuerung der …",
@@ -55,17 +77,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_360_61261.html",
       "published": "2026-10-09T06:00:00Z"
-    },
-    {
-      "headline": "Exporte im August 2026: -0,8 % zum Juli 2026",
-      "desc": "Im August 2026 sind die deutschen Exporte gegenüber Juli 2026 kalender- und saisonbereinigt um 0,8 % gesunken und die Importe um 0,9 % gestiegen. Im Vergleich zum Vorjahresmonat August 2025 …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "down",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_356_51.html",
-      "published": "2026-10-08T06:00:00Z"
     },
     {
       "headline": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
