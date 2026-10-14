@@ -1,30 +1,6 @@
 {
-  "updated": "2026-10-13T23:17:29Z",
+  "updated": "2026-10-14T23:12:46Z",
   "items": [
-    {
-      "date": "2026-10-14",
-      "time": "08:00",
-      "title": "Erzeugerpreise landwirtschaftlicher Produkte",
-      "period": "August 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-10-14",
-      "time": "08:00",
-      "title": "Großhandelspreise",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-10-15",
       "time": "08:00",
@@ -72,6 +48,42 @@
       "source": "U.S. Federal Reserve Board",
       "lang": "de",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "13:30",
+      "title": "GDP (Advance Estimate), 3rd Quarter 2026",
+      "period": "",
+      "hint": "US-Wirtschaftsleistung (BIP)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "13:30",
+      "title": "Personal Income and Outlays, September 2026",
+      "period": "",
+      "hint": "Einkommen und Konsum in den USA, inkl. PCE-Inflation (wichtigstes Inflationsmaß der Fed)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Governing Council of the ECB: monetary policy meeting in Frankfurt (Day 2), followed by press conference",
+      "period": "",
+      "hint": "Zinsentscheid der Europäischen Zentralbank",
+      "region": "EU",
+      "key": true,
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     }
   ]
 }
