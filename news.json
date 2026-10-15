@@ -1,6 +1,28 @@
 {
-  "updated": "2026-10-14T10:10:45Z",
+  "updated": "2026-10-15T07:24:32Z",
   "items": [
+    {
+      "headline": "Gewerbesteuereinnahmen im Jahr 2025 um 1,5 % höher als im Vorjahr",
+      "desc": "Die Gemeinden in Deutschland haben im Jahr 2025 rund 76,4 Milliarden Euro an Einnahmen aus der Gewerbesteuer (brutto) erzielt. Dies bedeutet ein Plus von rund 1,1 Milliarden Euro oder 1,5 % …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_369_712.html",
+      "published": "2026-10-15T06:00:00Z"
+    },
+    {
+      "headline": "Niedrigere Ernte und deutliche Preisanstiege bei Kartoffeln",
+      "desc": "Die Kartoffelernte fällt 2026 nach Schätzungen deutlich geringer als im Vorjahr aus, was Folgen für die Preise von Kartoffeln auf den verschiedenen Wirtschaftsstufen hat. Im September 2026 …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "down",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N070_61.html",
+      "published": "2026-10-15T06:00:00Z"
+    },
     {
       "headline": "Erzeugerpreise landwirtschaftlicher Produkte im August 2026: -7,0 % gegenüber August 2025",
       "desc": "Die Erzeugerpreise landwirtschaftlicher Produkte waren im August 2026 um 7,0 % niedriger als im August 2025. Im Juli 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei -13,7 % …",
@@ -65,17 +87,6 @@
       "trend": "up",
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_362_52411.html",
-      "published": "2026-10-09T06:00:00Z"
-    },
-    {
-      "headline": "Baupreise für Wohngebäude im August 2026: +5,5 % gegenüber August 2025",
-      "desc": "Die Preise für den Neubau konventionell gefertigter Wohngebäude in Deutschland sind im August 2026 gegenüber August 2025 um 5,5 % gestiegen. Im Mai 2026, dem vorherigen Berichtsmonat der …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_360_61261.html",
       "published": "2026-10-09T06:00:00Z"
     },
     {
