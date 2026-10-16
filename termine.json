@@ -1,10 +1,70 @@
 {
-  "updated": "2026-10-16T00:23:30Z",
+  "updated": "2026-10-16T11:21:07Z",
   "items": [
     {
-      "date": "2026-10-16",
+      "date": "2026-10-19",
       "time": "08:00",
-      "title": "Baugenehmigungen",
+      "title": "Verarbeitendes Gewerbe (Auftragsbestand)",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-20",
+      "time": "08:00",
+      "title": "Außenhandel (Detailergebnisse)",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-20",
+      "time": "08:00",
+      "title": "Erzeugerpreise gewerblicher Produkte",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-20",
+      "time": "08:00",
+      "title": "Umsatz im Gastgewerbe",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "08:00",
+      "title": "Wirtschaftsbeziehungen und Bevölkerungsbewegungen zwischen Deutschland und Russland",
+      "period": "1. Halbjahr 2021 - 1. Halbjahr 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-23",
+      "time": "08:00",
+      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
       "period": "August 2026",
       "hint": "",
       "region": "DE",

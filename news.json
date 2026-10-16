@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-15T07:24:32Z",
+  "updated": "2026-10-16T11:21:05Z",
   "items": [
+    {
+      "headline": "Baugenehmigungen für Wohnungen im August 2026: +6,8 % zum Vorjahresmonat",
+      "desc": "Im August 2026 wurde in Deutschland der Bau von 20 600 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 6,8 % oder 1 300 Baugenehmigungen mehr als im …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_370_3111.html",
+      "published": "2026-10-16T06:00:00Z"
+    },
     {
       "headline": "Gewerbesteuereinnahmen im Jahr 2025 um 1,5 % höher als im Vorjahr",
       "desc": "Die Gemeinden in Deutschland haben im Jahr 2025 rund 76,4 Milliarden Euro an Einnahmen aus der Gewerbesteuer (brutto) erzielt. Dies bedeutet ein Plus von rund 1,1 Milliarden Euro oder 1,5 % …",
@@ -77,17 +88,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_366_412.html",
       "published": "2026-10-13T06:00:00Z"
-    },
-    {
-      "headline": "Unternehmensinsolvenzen im Juli 2026: +8,0 % gegenüber Juli 2025",
-      "desc": "Im Juli 2026 haben die deutschen Amtsgerichte 2 373 beantragte Unternehmensinsolvenzen registriert. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 8,0 % mehr als im …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_362_52411.html",
-      "published": "2026-10-09T06:00:00Z"
     },
     {
       "headline": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
