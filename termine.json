@@ -1,30 +1,6 @@
 {
-  "updated": "2026-10-14T23:12:46Z",
+  "updated": "2026-10-16T00:23:30Z",
   "items": [
-    {
-      "date": "2026-10-15",
-      "time": "08:00",
-      "title": "Einnahmen der Kommunen aus Grund- und Gewerbesteuer (Realsteuereinnahmen)",
-      "period": "Jahr 2025",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-10-15",
-      "time": "08:00",
-      "title": "Verbraucherpreise, Erzeugerpreise und Ernte von Kartoffeln",
-      "period": "August/September/Jahr 2026",
-      "hint": "",
-      "region": "DE",
-      "key": true,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-10-16",
       "time": "08:00",
