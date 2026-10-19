@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-16T11:21:05Z",
+  "updated": "2026-10-19T06:14:06Z",
   "items": [
+    {
+      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im August 2026: +0,5 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im August 2026 gegenüber Juli 2026 saison …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_371_421.html",
+      "published": "2026-10-19T06:00:00Z"
+    },
     {
       "headline": "Baugenehmigungen für Wohnungen im August 2026: +6,8 % zum Vorjahresmonat",
       "desc": "Im August 2026 wurde in Deutschland der Bau von 20 600 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 6,8 % oder 1 300 Baugenehmigungen mehr als im …",
@@ -76,17 +87,6 @@
       "trend": "flat",
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_42_p002.html",
-      "published": "2026-10-13T06:00:00Z"
-    },
-    {
-      "headline": "KORREKTUR: Voraussichtliche Weinernte 2026 liegt 4 % unter dem Durchschnitt der Vorjahre",
-      "desc": "Die Weinbaubetriebe in Deutschland erwarten für 2026 eine um 0,3 Millionen Hektoliter beziehungsweise 4 % niedrigere Ernte als im Durchschnitt der Jahre 2020 bis 2025. Wie das Statistische …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "down",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_366_412.html",
       "published": "2026-10-13T06:00:00Z"
     },
     {
