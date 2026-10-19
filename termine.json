@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-16T11:21:07Z",
+  "updated": "2026-10-19T23:39:02Z",
   "items": [
-    {
-      "date": "2026-10-19",
-      "time": "08:00",
-      "title": "Verarbeitendes Gewerbe (Auftragsbestand)",
-      "period": "August 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-10-20",
       "time": "08:00",
