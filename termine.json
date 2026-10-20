@@ -1,42 +1,6 @@
 {
-  "updated": "2026-10-19T23:39:02Z",
+  "updated": "2026-10-20T22:18:46Z",
   "items": [
-    {
-      "date": "2026-10-20",
-      "time": "08:00",
-      "title": "Außenhandel (Detailergebnisse)",
-      "period": "August 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-10-20",
-      "time": "08:00",
-      "title": "Erzeugerpreise gewerblicher Produkte",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-10-20",
-      "time": "08:00",
-      "title": "Umsatz im Gastgewerbe",
-      "period": "August 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-10-21",
       "time": "08:00",
@@ -108,6 +72,18 @@
       "source": "Europäische Zentralbank (EZB)",
       "lang": "en",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "14:30",
+      "title": "U.S. International Trade in Goods and Services, September 2026",
+      "period": "",
+      "hint": "Außenhandel der USA",
+      "region": "US",
+      "key": false,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
     }
   ]
 }
