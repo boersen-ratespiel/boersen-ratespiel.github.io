@@ -1,6 +1,50 @@
 {
-  "updated": "2026-10-19T06:14:06Z",
+  "updated": "2026-10-20T10:02:22Z",
   "items": [
+    {
+      "headline": "Erzeugerpreise im September 2026: +6,7 % gegenüber September 2025",
+      "desc": "Die Erzeugerpreise gewerblicher Produkte waren im September 2026 um 6,7 % höher als im September 2025. Das war der stärkste Anstieg gegenüber dem Vorjahresmonat seit März 2023 (+7,5 %). Wie …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_373_61241.html",
+      "published": "2026-10-20T06:00:00Z"
+    },
+    {
+      "headline": "Rohöl im Wert von 30,0 Milliarden Euro im Zeitraum Januar bis August 2026 importiert",
+      "desc": "Im Zeitraum Januar bis August 2026 wurden 49,1 Millionen Tonnen Rohöl im Wert von 30,0 Milliarden Euro nach Deutschland importiert. Im Vorjahreszeitraum 2025 betrug der Import von Rohöl …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "flat",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_372_51.html",
+      "published": "2026-10-20T06:00:00Z"
+    },
+    {
+      "headline": "Gastgewerbeumsatz im August 2026 real 1,3 % niedriger als im Vormonat",
+      "desc": "Das Gastgewerbe in Deutschland hat im August 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,3 % und nominal …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_374_45213.html",
+      "published": "2026-10-20T06:00:00Z"
+    },
+    {
+      "headline": "69 % der Nudeln in der EU werden in Italien hergestellt",
+      "desc": "Ob Spaghetti, Fusilli oder Penne – Nudeln landen in vielen Formen auf dem Teller. Italien ist dabei der mit Abstand größte Nudelproduzent in der Europäischen Union (EU). Im Jahr 2025 wurden …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_43_p002.html",
+      "published": "2026-10-20T06:00:00Z"
+    },
     {
       "headline": "Auftragsbestand im Verarbeitenden Gewerbe im August 2026: +0,5 % zum Vormonat",
       "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im August 2026 gegenüber Juli 2026 saison …",
@@ -55,39 +99,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_367_61211.html",
       "published": "2026-10-14T06:00:00Z"
-    },
-    {
-      "headline": "Großhandelspreise im September 2026: +8,7 % gegenüber September 2025",
-      "desc": "Die Verkaufspreise im Großhandel waren im September 2026 um 8,7 % höher als im September 2025. Im August 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei +6,8 % gelegen, im …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_368_61281.html",
-      "published": "2026-10-14T06:00:00Z"
-    },
-    {
-      "headline": "Inflationsrate im September 2026 bei +3,3 %",
-      "desc": "Die Inflationsrate in Deutschland – gemessen als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat – lag im September 2026 bei +3,3 %. Damit hat sich die Teuerung der …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 3,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html",
-      "published": "2026-10-13T06:00:00Z"
-    },
-    {
-      "headline": "10 % weniger Lebkuchen im Jahr 2025 in Deutschland produziert",
-      "desc": "Bis zur Weihnachtszeit ist noch etwas Zeit, doch die Supermarktregale sind schon gut mit Lebkuchen gefüllt - und in der Produktion herrscht längst Hochsaison. Im Jahr 2025 wurden in …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_42_p002.html",
-      "published": "2026-10-13T06:00:00Z"
     },
     {
       "headline": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
