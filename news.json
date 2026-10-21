@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-20T10:02:22Z",
+  "updated": "2026-10-21T07:37:00Z",
   "items": [
+    {
+      "headline": "Deutschland importierte im 1. Halbjahr 2026 gut 96 % weniger Waren aus Russland als im 1. Halbjahr 2021",
+      "desc": "Der deutsch-russische Austausch hat seit dem Beginn des Angriffs Russlands auf die Ukraine im Februar 2022 in vielerlei Hinsicht deutlich abgenommen. Im 1. Halbjahr 2026 hat Deutschland …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N072_51_46.html",
+      "published": "2026-10-21T06:00:00Z"
+    },
     {
       "headline": "Erzeugerpreise im September 2026: +6,7 % gegenüber September 2025",
       "desc": "Die Erzeugerpreise gewerblicher Produkte waren im September 2026 um 6,7 % höher als im September 2025. Das war der stärkste Anstieg gegenüber dem Vorjahresmonat seit März 2023 (+7,5 %). Wie …",
@@ -88,17 +99,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N070_61.html",
       "published": "2026-10-15T06:00:00Z"
-    },
-    {
-      "headline": "Erzeugerpreise landwirtschaftlicher Produkte im August 2026: -7,0 % gegenüber August 2025",
-      "desc": "Die Erzeugerpreise landwirtschaftlicher Produkte waren im August 2026 um 7,0 % niedriger als im August 2025. Im Juli 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei -13,7 % …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "down",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_367_61211.html",
-      "published": "2026-10-14T06:00:00Z"
     },
     {
       "headline": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
