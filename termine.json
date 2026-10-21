@@ -1,6 +1,18 @@
 {
-  "updated": "2026-10-21T13:46:39Z",
+  "updated": "2026-10-21T22:19:30Z",
   "items": [
+    {
+      "date": "2026-10-23",
+      "time": "08:00",
+      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
     {
       "date": "2026-10-28",
       "time": "19:00",
