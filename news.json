@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T07:37:00Z",
+  "updated": "2026-10-22T13:46:27Z",
   "items": [
     {
       "headline": "Deutschland importierte im 1. Halbjahr 2026 gut 96 % weniger Waren aus Russland als im 1. Halbjahr 2021",
@@ -99,17 +99,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N070_61.html",
       "published": "2026-10-15T06:00:00Z"
-    },
-    {
-      "headline": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
-      "published": "2026-10-07T08:00:00Z"
     }
   ]
 }
