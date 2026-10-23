@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-21T22:19:30Z",
+  "updated": "2026-10-23T13:24:35Z",
   "items": [
-    {
-      "date": "2026-10-23",
-      "time": "08:00",
-      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
-      "period": "August 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-10-28",
       "time": "19:00",
@@ -24,6 +12,18 @@
       "source": "U.S. Federal Reserve Board",
       "lang": "de",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "08:00",
+      "title": "Integrierte Schulden der kommunalen Haushalte",
+      "period": "Stand: 31.12.2025",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
       "date": "2026-10-29",
@@ -60,6 +60,54 @@
       "source": "Europäische Zentralbank (EZB)",
       "lang": "en",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "08:00",
+      "title": "Außenhandelspreise",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "08:00",
+      "title": "Bruttoinlandsprodukt, Schnellmeldung (10:00 Uhr)",
+      "period": "3. Quartal 2026",
+      "hint": "",
+      "region": "DE",
+      "key": true,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "08:00",
+      "title": "Monatliche Arbeitsmarktstatistik (Erwerbstätige, Erwerbslose, Erwerbslosenquote)",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "08:00",
+      "title": "Verbraucherpreisindex (inklusive Harmonisierter Verbraucherpreisindex), vorläufige Ergebnisse (im Laufe des Tages)",
+      "period": "Oktober 2026",
+      "hint": "",
+      "region": "DE",
+      "key": true,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
       "date": "2026-11-04",
