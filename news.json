@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-22T13:46:27Z",
+  "updated": "2026-10-23T07:29:58Z",
   "items": [
+    {
+      "headline": "Auftragseingang im Bauhauptgewerbe im August 2026: +23,0 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragseingang im Bauhauptgewerbe ist im August 2026 gegenüber Juli 2026 kalender- und saisonbereinigt um 23,0 % gestiegen. Bedingt durch mehrere Großaufträge …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_375_441.html",
+      "published": "2026-10-23T06:00:00Z"
+    },
     {
       "headline": "Deutschland importierte im 1. Halbjahr 2026 gut 96 % weniger Waren aus Russland als im 1. Halbjahr 2021",
       "desc": "Der deutsch-russische Austausch hat seit dem Beginn des Angriffs Russlands auf die Ukraine im Februar 2022 in vielerlei Hinsicht deutlich abgenommen. Im 1. Halbjahr 2026 hat Deutschland …",
@@ -87,17 +98,6 @@
       "trend": "up",
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_369_712.html",
-      "published": "2026-10-15T06:00:00Z"
-    },
-    {
-      "headline": "Niedrigere Ernte und deutliche Preisanstiege bei Kartoffeln",
-      "desc": "Die Kartoffelernte fällt 2026 nach Schätzungen deutlich geringer als im Vorjahr aus, was Folgen für die Preise von Kartoffeln auf den verschiedenen Wirtschaftsstufen hat. Im September 2026 …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "down",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N070_61.html",
       "published": "2026-10-15T06:00:00Z"
     }
   ]
