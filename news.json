@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-27T10:31:41Z",
+  "updated": "2026-10-28T08:27:17Z",
   "items": [
+    {
+      "headline": "1,2 % mehr Krankenhausbehandlungen im Jahr 2025",
+      "desc": "Im Jahr 2025 wurden in Deutschland 17,7 Millionen Patientinnen und Patienten vollstationär im Krankenhaus behandelt, das waren 1,2 % oder 203 000 mehr als im Vorjahr. Wie das Statistische …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_376_231.html",
+      "published": "2026-10-28T07:00:00Z"
+    },
     {
       "headline": "Bruttosparquote in Deutschland mit 18,9 % im internationalen Vergleich überdurchschnittlich hoch",
       "desc": "Private Haushalte in Deutschland sparen anteilig mehr als in vielen anderen Industriestaaten. Mit 18,9 % lag die Bruttosparquote im Jahr 2025 deutlich über dem Durchschnitt in der …",
