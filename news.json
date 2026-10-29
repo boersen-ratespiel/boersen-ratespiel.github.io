@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-28T08:27:17Z",
+  "updated": "2026-10-29T07:02:55Z",
   "items": [
+    {
+      "headline": "Integrierte kommunale Schulden steigen im Jahr 2025 um 9,9 %",
+      "desc": "Die Schulden der Gemeinden und Gemeindeverbände einschließlich ihrer Beteiligungen beim nicht-öffentlichen Bereich stiegen nach einer Modellrechnung der Statistischen Ämter des Bundes und …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_378_713.html",
+      "published": "2026-10-29T07:00:00Z"
+    },
     {
       "headline": "1,2 % mehr Krankenhausbehandlungen im Jahr 2025",
       "desc": "Im Jahr 2025 wurden in Deutschland 17,7 Millionen Patientinnen und Patienten vollstationär im Krankenhaus behandelt, das waren 1,2 % oder 203 000 mehr als im Vorjahr. Wie das Statistische …",
@@ -110,28 +121,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_374_45213.html",
       "published": "2026-10-20T06:00:00Z"
-    },
-    {
-      "headline": "69 % der Nudeln in der EU werden in Italien hergestellt",
-      "desc": "Ob Spaghetti, Fusilli oder Penne – Nudeln landen in vielen Formen auf dem Teller. Italien ist dabei der mit Abstand größte Nudelproduzent in der Europäischen Union (EU). Im Jahr 2025 wurden …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_43_p002.html",
-      "published": "2026-10-20T06:00:00Z"
-    },
-    {
-      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im August 2026: +0,5 % zum Vormonat",
-      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im August 2026 gegenüber Juli 2026 saison …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_371_421.html",
-      "published": "2026-10-19T06:00:00Z"
     }
   ]
 }
