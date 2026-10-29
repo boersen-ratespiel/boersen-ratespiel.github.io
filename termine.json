@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-23T13:24:35Z",
+  "updated": "2026-10-29T00:54:03Z",
   "items": [
-    {
-      "date": "2026-10-28",
-      "time": "19:00",
-      "title": "US-Notenbank (Fed): Zinsentscheid",
-      "period": "",
-      "hint": "",
-      "region": "US",
-      "key": true,
-      "source": "U.S. Federal Reserve Board",
-      "lang": "de",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
     {
       "date": "2026-10-29",
       "time": "08:00",
