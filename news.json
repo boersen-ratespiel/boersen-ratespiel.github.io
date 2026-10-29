@@ -1,6 +1,28 @@
 {
-  "updated": "2026-10-29T07:02:55Z",
+  "updated": "2026-10-29T14:15:43Z",
   "items": [
+    {
+      "headline": "Monetary policy decisions",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 3,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "published": "2026-10-29T13:15:00Z"
+    },
+    {
+      "headline": "ECB President Lagarde to step down on 7 February 2027",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "published": "2026-10-29T10:00:00Z"
+    },
     {
       "headline": "Integrierte kommunale Schulden steigen im Jahr 2025 um 9,9 %",
       "desc": "Die Schulden der Gemeinden und Gemeindeverbände einschließlich ihrer Beteiligungen beim nicht-öffentlichen Bereich stiegen nach einer Modellrechnung der Statistischen Ämter des Bundes und …",
