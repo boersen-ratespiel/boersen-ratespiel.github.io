@@ -1,6 +1,50 @@
 {
-  "updated": "2026-10-29T14:15:43Z",
+  "updated": "2026-10-30T12:51:45Z",
   "items": [
+    {
+      "headline": "Bruttoinlandsprodukt im 3. Quartal 2026 um 0,2 % höher als im Vorquartal",
+      "desc": "Das Bruttoinlandsprodukt (BIP) ist im 3. Quartal 2026 gegenüber dem 2. Quartal 2026 – preis-, saison- und kalenderbereinigt – um 0,2 % gestiegen, nachdem es bereits in der ersten …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 3,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_381_811.html",
+      "published": "2026-10-30T09:00:00Z"
+    },
+    {
+      "headline": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "published": "2026-10-30T09:00:00Z"
+    },
+    {
+      "headline": "Importpreise im September 2026: +10,4 % gegenüber September 2025",
+      "desc": "Die Importpreise waren im September 2026 um 10,4 % höher als im September 2025. Dies war der stärkste Anstieg gegenüber dem Vorjahresmonat seit November 2022 (+12,3 % gegenüber November …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_379_614.html",
+      "published": "2026-10-30T07:00:00Z"
+    },
+    {
+      "headline": "Erwerbstätigkeit im September 2026 saisonbereinigt gegenüber dem Vormonat nahezu unverändert",
+      "desc": "Im September 2026 waren nach Ergebnissen der Erwerbstätigenrechnung rund 45,60 Millionen Personen mit Wohnort in Deutschland (Inländerkonzept) erwerbstätig. Nach vorläufigen Berechnungen …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_380_132.html",
+      "published": "2026-10-30T07:00:00Z"
+    },
     {
       "headline": "Monetary policy decisions",
       "desc": "",
@@ -110,39 +154,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N072_51_46.html",
       "published": "2026-10-21T06:00:00Z"
-    },
-    {
-      "headline": "Erzeugerpreise im September 2026: +6,7 % gegenüber September 2025",
-      "desc": "Die Erzeugerpreise gewerblicher Produkte waren im September 2026 um 6,7 % höher als im September 2025. Das war der stärkste Anstieg gegenüber dem Vorjahresmonat seit März 2023 (+7,5 %). Wie …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_373_61241.html",
-      "published": "2026-10-20T06:00:00Z"
-    },
-    {
-      "headline": "Rohöl im Wert von 30,0 Milliarden Euro im Zeitraum Januar bis August 2026 importiert",
-      "desc": "Im Zeitraum Januar bis August 2026 wurden 49,1 Millionen Tonnen Rohöl im Wert von 30,0 Milliarden Euro nach Deutschland importiert. Im Vorjahreszeitraum 2025 betrug der Import von Rohöl …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_372_51.html",
-      "published": "2026-10-20T06:00:00Z"
-    },
-    {
-      "headline": "Gastgewerbeumsatz im August 2026 real 1,3 % niedriger als im Vormonat",
-      "desc": "Das Gastgewerbe in Deutschland hat im August 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,3 % und nominal …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "down",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_374_45213.html",
-      "published": "2026-10-20T06:00:00Z"
     }
   ]
 }

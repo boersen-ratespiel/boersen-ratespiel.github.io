@@ -1,42 +1,6 @@
 {
-  "updated": "2026-10-29T23:56:15Z",
+  "updated": "2026-10-30T12:51:47Z",
   "items": [
-    {
-      "date": "2026-10-30",
-      "time": "08:00",
-      "title": "Außenhandelspreise",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-10-30",
-      "time": "08:00",
-      "title": "Bruttoinlandsprodukt, Schnellmeldung (10:00 Uhr)",
-      "period": "3. Quartal 2026",
-      "hint": "",
-      "region": "DE",
-      "key": true,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-10-30",
-      "time": "08:00",
-      "title": "Monatliche Arbeitsmarktstatistik (Erwerbstätige, Erwerbslose, Erwerbslosenquote)",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-10-30",
       "time": "08:00",
@@ -45,6 +9,42 @@
       "hint": "",
       "region": "DE",
       "key": true,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-02",
+      "time": "08:00",
+      "title": "Umsatz im Einzelhandel",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-03",
+      "time": "08:00",
+      "title": "Produktion von zuckerhaltigen und Light-Erfrischungsgetränken sowie Adipositas im internationalen Vergleich",
+      "period": "Jahre 2019-2025",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "08:00",
+      "title": "Anteil von Führungskräften in der EU sowie Verdienste von Führungskräften in Deutschland",
+      "period": "April/Jahr 2025",
+      "hint": "",
+      "region": "DE",
+      "key": false,
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
@@ -60,6 +60,54 @@
       "source": "U.S. Bureau of Economic Analysis (BEA)",
       "lang": "en",
       "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "08:00",
+      "title": "Arbeitskostenerhebung",
+      "period": "Jahr 2024",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "08:00",
+      "title": "Umsatz im Dienstleistungsbereich",
+      "period": "August 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "08:00",
+      "title": "Verarbeitendes Gewerbe (Auftragseingang und Umsatz)",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "08:00",
+      "title": "Produktionsindex",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     }
   ]
 }
