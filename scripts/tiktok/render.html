@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>TikTok-Slides</title>
+<!--
+  Vorlage für scripts/build_tiktok.py: zeichnet die Slides des Tages per Canvas (1080×1920, Hochformat) und schreibt
+  das Ergebnis als JSON in #out. build_tiktok.py ersetzt die Platzhalter, öffnet die Seite in Headless-Chrome
+  (--dump-dom) und liest #out aus. Keine Emojis im Bild — auf dem Actions-Runner fehlt eine Emoji-Schrift.
+-->
+<style>
+  @font-face {
+    font-family: 'Outfit';
+    font-weight: 400 800;
+    src: url('__FONT_URL__') format('woff2');
+  }
+</style>
+</head>
+<body>
+<pre id="out"></pre>
+<script>
+const JOB = __JOB__;
+__QUIZ_DATA__
+</script>
+<script>
+const W = 1080, H = 1920;
+const SITE = 'boersen-ratespiel.github.io';
+const C = {
+  text: '#f3f5fb', muted: '#8d94ac', green: '#34d399', red: '#fb7185', blue: '#60a5fa', accent: '#6366f1', ai: '#22d3ee',
+};
+const font = (weight, px) => `${weight} ${px}px Outfit, "Segoe UI", Roboto, sans-serif`;
+
+// Gleicher Zufallsgenerator wie die Tages-Challenge in script.js (FNV-1a + mulberry32, Irwin-Hall), aber eigener
+// Seed — die TikTok-Kurve darf die Lösung der echten Tages-Challenge nicht verraten.
+function hashString(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed) {
+  let a = seed >>> 0;
+  return function () {
+    a = (a + 0x6D2B79F5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const HISTORY_POINTS = 90, FUTURE_POINTS = 25;
+
+function seriesFor(seed) {
+  const rand = mulberry32(hashString(seed));
+  const gauss = () => {
+    let sum = 0;
+    for (let i = 0; i < 12; i++) sum += rand();
+    return sum - 6;
+  };
+  const drift = (rand() - 0.45) * 0.006;
+  const volatility = 0.012 + rand() * 0.022;
+  const points = [100];
+  for (let i = 1; i < HISTORY_POINTS + FUTURE_POINTS; i++) {
+    points.push(Math.max(5, points[i - 1] * (1 + drift + gauss() * volatility)));
+  }
+  return points;
+}
+
+function newSlide() {
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const g = c.getContext('2d');
+  const bg = g.createLinearGradient(0, 0, W, H);
+  bg.addColorStop(0, '#0b1024');
+  bg.addColorStop(0.55, '#1a1140');
+  bg.addColorStop(1, '#06070d');
+  g.fillStyle = bg;
+  g.fillRect(0, 0, W, H);
+  const glow = g.createRadialGradient(W * 0.85, H * 0.1, 0, W * 0.85, H * 0.1, W * 0.9);
+  glow.addColorStop(0, 'rgba(99, 102, 241, 0.35)');
+  glow.addColorStop(1, 'rgba(99, 102, 241, 0)');
+  g.fillStyle = glow;
+  g.fillRect(0, 0, W, H);
+  g.textAlign = 'center';
+  g.textBaseline = 'alphabetic';
+  // TikTok legt oben die Reiter und unten Beschreibung/Buttons über das Bild — Inhalt bleibt grob zwischen 220 und 1500.
+  g.fillStyle = C.muted;
+  g.font = font(700, 40);
+  g.fillText('BÖRSEN-RATESPIEL', W / 2, 250);
+  return { c, g };
+}
+
+function wrap(g, text, maxWidth) {
+  const lines = [];
+  let line = '';
+  for (const word of text.split(/\s+/)) {
+    const test = line ? line + ' ' + word : word;
+    if (g.measureText(test).width > maxWidth && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+// Schreibt Text umbrochen ab y und verkleinert die Schrift, bis er in maxLines Zeilen passt. Gibt das neue y zurück.
+function paragraph(g, text, y, { weight = 600, size = 56, color = C.text, maxWidth = 900, maxLines = 8, lineHeight = 1.3, align = 'center' } = {}) {
+  let lines;
+  for (;;) {
+    g.font = font(weight, size);
+    lines = wrap(g, text, maxWidth);
+    if (lines.length <= maxLines || size <= 30) break;
+    size -= 4;
+  }
+  g.fillStyle = color;
+  g.textAlign = align;
+  const x = align === 'left' ? (W - maxWidth) / 2 : W / 2;
+  lines.forEach((l, i) => g.fillText(l, x, y + i * size * lineHeight));
+  g.textAlign = 'center';
+  return y + lines.length * size * lineHeight;
+}
+
+function pill(g, text, y, color) {
+  g.font = font(800, 40);
+  const w = g.measureText(text).width + 70;
+  g.fillStyle = color;
+  g.globalAlpha = 0.18;
+  g.beginPath();
+  g.roundRect((W - w) / 2, y - 52, w, 76, 38);
+  g.fill();
+  g.globalAlpha = 1;
+  g.fillStyle = color;
+  g.fillText(text, W / 2, y);
+}
+
+function footerHint(g, text) {
+  g.fillStyle = C.muted;
+  g.font = font(600, 38);
+  g.fillText(text, W / 2, 1460);
+}
+
+function chart(g, series, visibleCount, x0, y0, w, h, revealColor) {
+  const visible = series.slice(0, visibleCount);
+  const min = Math.min(...visible), max = Math.max(...visible);
+  const pad = (max - min) * 0.12 || 1;
+  const yMin = min - pad, yMax = max + pad;
+  const xStep = w / (HISTORY_POINTS + FUTURE_POINTS - 1);
+  const xy = (i, p) => [x0 + i * xStep, y0 + h - ((p - yMin) / (yMax - yMin)) * h];
+  const histEnd = Math.min(HISTORY_POINTS, visibleCount);
+
+  g.fillStyle = 'rgba(255, 255, 255, 0.05)';
+  g.strokeStyle = 'rgba(255, 255, 255, 0.09)';
+  g.lineWidth = 2;
+  g.beginPath();
+  g.roundRect(x0 - 30, y0 - 30, w + 60, h + 60, 36);
+  g.fill();
+  g.stroke();
+
+  const grad = g.createLinearGradient(0, y0, 0, y0 + h);
+  grad.addColorStop(0, 'rgba(96, 165, 250, 0.30)');
+  grad.addColorStop(1, 'rgba(96, 165, 250, 0)');
+  g.beginPath();
+  for (let i = 0; i < histEnd; i++) {
+    const [x, y] = xy(i, series[i]);
+    if (i === 0) g.moveTo(x, y); else g.lineTo(x, y);
+  }
+  g.lineTo(xy(histEnd - 1, 0)[0], y0 + h);
+  g.lineTo(x0, y0 + h);
+  g.closePath();
+  g.fillStyle = grad;
+  g.fill();
+
+  const line = (from, to, color) => {
+    g.lineWidth = 7;
+    g.lineJoin = 'round';
+    g.strokeStyle = color;
+    g.shadowColor = color;
+    g.shadowBlur = 18;
+    g.beginPath();
+    for (let i = from; i < to; i++) {
+      const [x, y] = xy(i, series[i]);
+      if (i === from) g.moveTo(x, y); else g.lineTo(x, y);
+    }
+    g.stroke();
+    g.shadowBlur = 0;
+  };
+  line(0, histEnd, C.blue);
+  if (visibleCount > HISTORY_POINTS) line(HISTORY_POINTS - 1, visibleCount, revealColor);
+
+  const divX = x0 + (HISTORY_POINTS - 1) * xStep;
+  g.strokeStyle = 'rgba(255, 255, 255, 0.25)';
+  g.lineWidth = 3;
+  g.setLineDash([12, 12]);
+  g.beginPath();
+  g.moveTo(divX, y0);
+  g.lineTo(divX, y0 + h);
+  g.stroke();
+  g.setLineDash([]);
+
+  if (visibleCount <= HISTORY_POINTS) {
+    g.fillStyle = 'rgba(255, 255, 255, 0.85)';
+    g.font = font(800, 150);
+    g.fillText('?', divX + (x0 + w - divX) / 2, y0 + h / 2 + 52);
+  }
+  const [lx, ly] = xy(visibleCount - 1, series[visibleCount - 1]);
+  const dot = visibleCount > HISTORY_POINTS ? revealColor : C.blue;
+  g.fillStyle = dot;
+  g.shadowColor = dot;
+  g.shadowBlur = 24;
+  g.beginPath();
+  g.arc(lx, ly, 14, 0, Math.PI * 2);
+  g.fill();
+  g.shadowBlur = 0;
+}
+
+function ctaSlide(line1) {
+  const { c, g } = newSlide();
+  paragraph(g, line1, 480, { weight: 800, size: 84, maxLines: 3 });
+  paragraph(g, 'Kostenlos & ohne Anmeldung:', 930, { weight: 600, size: 48, color: C.muted });
+  g.fillStyle = C.blue;
+  g.font = font(800, 62);
+  g.fillText(SITE, W / 2, 1030);
+  const items = ['Tages-Challenge', 'Börsen-Quiz', 'Musterdepot', `Lexikon mit ${JOB.lexikonCount} Begriffen`];
+  g.font = font(600, 46);
+  items.forEach((t, i) => {
+    g.fillStyle = C.green;
+    g.beginPath();
+    g.arc(W / 2 - 250, 1170 + i * 75 - 15, 10, 0, Math.PI * 2);
+    g.fill();
+    g.fillStyle = C.text;
+    g.textAlign = 'left';
+    g.fillText(t, W / 2 - 215, 1170 + i * 75);
+    g.textAlign = 'center';
+  });
+  g.fillStyle = C.muted;
+  g.font = font(500, 32);
+  g.fillText('Keine Anlageberatung. Link im Profil.', W / 2, 1520);
+  return c;
+}
+
+const fmtPct = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(1).replace('.', ',') + ' %';
+
+function buildChart() {
+  const series = seriesFor(`tiktok|${JOB.date}`);
+  const last = series[HISTORY_POINTS - 1], end = series[series.length - 1];
+  const up = end > last;
+  const color = up ? C.green : C.red;
+  const pct = (end / last - 1) * 100;
+
+  const s1 = newSlide();
+  paragraph(s1.g, 'Rauf oder runter?', 430, { weight: 800, size: 104 });
+  paragraph(s1.g, 'Wie geht dieser Kurs weiter?', 530, { size: 50, color: C.muted });
+  chart(s1.g, series, HISTORY_POINTS, 110, 680, 860, 560, color);
+  footerHint(s1.g, 'Tipp in die Kommentare — Auflösung im nächsten Bild');
+
+  const s2 = newSlide();
+  paragraph(s2.g, 'Auflösung', 430, { weight: 800, size: 104 });
+  pill(s2.g, `${up ? 'RAUF' : 'RUNTER'}  ${fmtPct(pct)}`, 560, color);
+  chart(s2.g, series, series.length, 110, 680, 860, 560, color);
+  footerHint(s2.g, 'Simulierter Kurs — keine echten Marktdaten');
+
+  return {
+    title: 'Rauf oder runter? Tipp in die Kommentare',
+    description: 'Wie geht dieser Kurs weiter? Tipp ab — die Auflösung kommt im nächsten Bild. '
+      + `Jeden Tag 5 neue Kurse in der Tages-Challenge: ${SITE} (simulierte Kurse, keine Anlageberatung)`,
+    slides: [s1.c, s2.c, ctaSlide('Hättest du es gewusst? Jeden Tag 5 neue Kurse.')],
+  };
+}
+
+function buildQuiz() {
+  const all = Object.values(QUIZ_DATA).flat();
+  const q = all[((JOB.pick % all.length) + all.length) % all.length];
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const drawOptions = (g, y, reveal) => {
+    q.options.forEach((opt, i) => {
+      const right = reveal && i === q.correct;
+      const dim = reveal && !right;
+      g.font = font(600, 46);
+      const lines = wrap(g, opt, 700);
+      const h = Math.max(130, 60 + lines.length * 58);
+      g.globalAlpha = dim ? 0.35 : 1;
+      g.fillStyle = right ? 'rgba(52, 211, 153, 0.18)' : 'rgba(255, 255, 255, 0.06)';
+      g.strokeStyle = right ? C.green : 'rgba(255, 255, 255, 0.12)';
+      g.lineWidth = 3;
+      g.beginPath();
+      g.roundRect(100, y, 880, h, 30);
+      g.fill();
+      g.stroke();
+      g.fillStyle = right ? C.green : C.accent;
+      g.beginPath();
+      g.arc(175, y + h / 2, 38, 0, Math.PI * 2);
+      g.fill();
+      g.fillStyle = '#06070d';
+      g.font = font(800, 42);
+      g.fillText(letters[i], 175, y + h / 2 + 15);
+      g.fillStyle = C.text;
+      g.font = font(600, 46);
+      g.textAlign = 'left';
+      lines.forEach((l, k) => g.fillText(l, 245, y + h / 2 + 16 - (lines.length - 1) * 29 + k * 58));
+      g.textAlign = 'center';
+      g.globalAlpha = 1;
+      y += h + 30;
+    });
+    return y;
+  };
+
+  const s1 = newSlide();
+  pill(s1.g, 'BÖRSEN-QUIZ', 400, C.ai);
+  let y = paragraph(s1.g, q.q, 560, { weight: 800, size: 68, maxLines: 4 });
+  drawOptions(s1.g, y + 40, false);
+  footerHint(s1.g, 'A, B oder C? Ab in die Kommentare!');
+
+  const s2 = newSlide();
+  pill(s2.g, `RICHTIG: ${letters[q.correct]}`, 400, C.green);
+  y = paragraph(s2.g, q.q, 540, { weight: 700, size: 52, maxLines: 3, color: C.muted });
+  y = drawOptions(s2.g, y + 30, true);
+  paragraph(s2.g, q.explain, y + 50, { size: 44, maxLines: 5 });
+
+  return {
+    title: `Börsen-Quiz: ${q.q}`.slice(0, 90),
+    description: `${q.q} A, B oder C? Schreib deine Antwort in die Kommentare — die Lösung steht im zweiten Bild. `
+      + `Mehr Fragen im Quiz: ${SITE}`,
+    slides: [s1.c, s2.c, ctaSlide('Wie viele Fragen schaffst du ohne Fehler?')],
+  };
+}
+
+function buildLexikon() {
+  const e = JOB.lexikon;
+  const s1 = newSlide();
+  pill(s1.g, 'BÖRSEN-BEGRIFF ERKLÄRT', 560, C.ai);
+  paragraph(s1.g, e.title, 820, { weight: 800, size: 130, maxLines: 3 });
+  footerHint(s1.g, 'Weißt du, was das ist? Erklärung im nächsten Bild');
+
+  const s2 = newSlide();
+  paragraph(s2.g, e.title, 440, { weight: 800, size: 84, maxLines: 2 });
+  paragraph(s2.g, e.text, 600, { size: 52, maxLines: 14, align: 'left', lineHeight: 1.4 });
+
+  return {
+    title: `Börsen-Begriff erklärt: ${e.title}`.slice(0, 90),
+    description: `${e.title} einfach erklärt. Alle Begriffe im Börsen-Lexikon: ${SITE}/lexikon/${e.id}.html`,
+    slides: [s1.c, s2.c, ctaSlide('Noch mehr Börsen-Begriffe einfach erklärt.')],
+  };
+}
+
+(async () => {
+  const out = document.getElementById('out');
+  try {
+    await document.fonts.load(font(800, 40));
+    await document.fonts.load(font(600, 40));
+    const post = { chart: buildChart, quiz: buildQuiz, lexikon: buildLexikon }[JOB.kind]();
+    out.textContent = JSON.stringify({
+      title: post.title,
+      description: post.description,
+      images: post.slides.map(c => c.toDataURL('image/jpeg', 0.9).split(',')[1]),
+    });
+  } catch (err) {
+    out.textContent = JSON.stringify({ error: String(err && err.stack || err) });
+  }
+})();
+</script>
+</body>
+</html>
