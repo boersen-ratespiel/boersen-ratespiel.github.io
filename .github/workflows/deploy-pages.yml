@@ -6,7 +6,7 @@ name: Deploy Pages
 on:
   push:
     branches: [main]
-  workflow_call: # aus update-news.yml, sobald sich news.json/termine.json geändert haben
+  workflow_call: # aus update-news.yml (neue News) und tiktok-post.yml (vor dem Posten)
   workflow_dispatch: # manuell: Actions-Tab -> "Deploy Pages" -> "Run workflow"
 
 permissions:
@@ -34,6 +34,12 @@ jobs:
       - name: Build Lexikon-Seiten und Sitemap
         run: python3 scripts/build_lexikon.py
 
+      # Bilder für den TikTok-Beitrag des Tages (scripts/build_tiktok.py, nutzt das auf dem Runner vorinstallierte
+      # Chrome). TikTok holt sie per URL von der Seite ab, siehe tiktok-post.yml. Ein Fehler darf den Deploy nicht stoppen.
+      - name: TikTok-Bilder des Tages
+        continue-on-error: true
+        run: python3 scripts/build_tiktok.py
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
@@ -42,9 +48,10 @@ jobs:
         uses: actions/deploy-pages@v4
 
       # Bing & Co. über neue/geänderte Seiten informieren (IndexNow, siehe scripts/indexnow.py). Nur bei Pushes und
-      # manuellen Läufen, nicht bei den stündlichen News-Deploys (dort ist github.event_name "schedule").
+      # manuellen Läufen, nicht bei den stündlichen News-Deploys (dort ist github.event_name "schedule") und nicht beim
+      # Aufruf aus tiktok-post.yml (github.workflow ist bei workflow_call der Name des aufrufenden Workflows).
       # Ein Fehler hier darf die bereits erfolgte Veröffentlichung nicht als gescheitert markieren.
       - name: IndexNow-Meldung
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        if: github.workflow == 'Deploy Pages' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
         continue-on-error: true
         run: python3 scripts/indexnow.py

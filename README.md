@@ -38,6 +38,8 @@ Die App ist eine Progressive Web App: über "Zum Home-Bildschirm hinzufügen" (i
 | `.github/workflows/update-news.yml` | Führt das Skript stündlich aus und committet `news.json` bei Änderungen |
 | `scripts/build_lexikon.py` | Erzeugt beim Deploy die Lexikon-Einzelseiten und `sitemap.xml` |
 | `.github/workflows/deploy-pages.yml` | Veröffentlicht die Seite auf GitHub Pages |
+| `scripts/build_tiktok.py`, `scripts/tiktok/render.html` | Zeichnen beim Deploy die Bilder für den täglichen TikTok-Beitrag (Kurs-Rätsel, Quizfrage, Börsen-Begriff) |
+| `scripts/tiktok_post.py`, `.github/workflows/tiktok-post.yml` | Postet den Beitrag täglich über die TikTok-API (Einrichtung: `scripts/tiktok_auth.py`, Details in `CLAUDE.md`) |
 | `manifest.json`, `sw.js` | PWA-Manifest und Service Worker |
 | `icons/`, `apple-touch-icon.png`, `favicon.png` | App-Icons |
 | `fonts/` | Lokal gehostete Schriftart (kein Google-Fonts-Aufruf) |

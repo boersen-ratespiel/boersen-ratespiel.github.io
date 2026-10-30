@@ -1,0 +1,42 @@
+name: TikTok post
+
+# Postet einmal am Tag einen selbst erzeugten Foto-Beitrag (3 Bilder: Rauf oder runter? / Quizfrage / Börsen-Begriff,
+# im Wechsel) auf TikTok. Erst wird die Seite neu veröffentlicht, damit die Bilder des Tages online sind
+# (deploy-pages.yml ruft scripts/build_tiktok.py auf), dann übergibt scripts/tiktok_post.py ihre URLs an TikTok.
+# Ohne die Secrets TIKTOK_CLIENT_KEY/TIKTOK_CLIENT_SECRET/TIKTOK_REFRESH_TOKEN wird nichts gepostet.
+# Einrichtung: siehe Abschnitt "TikTok" in CLAUDE.md.
+on:
+  schedule:
+    - cron: '41 15 * * *' # täglich 16:41 Uhr (Winterzeit) bzw. 17:41 Uhr (Sommerzeit) in Berlin — Feierabend-Zeit
+  workflow_dispatch: # manuell: Actions-Tab -> "TikTok post" -> "Run workflow"
+
+concurrency:
+  group: tiktok-post
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-pages.yml
+
+  post:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Beitrag an TikTok übergeben
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          TIKTOK_POST_MODE: ${{ vars.TIKTOK_POST_MODE }}
+          TIKTOK_PRIVACY: ${{ vars.TIKTOK_PRIVACY }}
+        run: python3 scripts/tiktok_post.py
