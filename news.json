@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-30T12:51:45Z",
+  "updated": "2026-10-30T18:35:39Z",
   "items": [
+    {
+      "headline": "Inflationsrate im Oktober 2026 voraussichtlich +2,8 %",
+      "desc": "Die Inflationsrate in Deutschland wird im Oktober 2026 voraussichtlich +2,8 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 3,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html",
+      "published": "2026-10-30T13:00:00Z"
+    },
     {
       "headline": "Bruttoinlandsprodukt im 3. Quartal 2026 um 0,2 % höher als im Vorquartal",
       "desc": "Das Bruttoinlandsprodukt (BIP) ist im 3. Quartal 2026 gegenüber dem 2. Quartal 2026 – preis-, saison- und kalenderbereinigt – um 0,2 % gestiegen, nachdem es bereits in der ersten …",
@@ -143,17 +154,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_375_441.html",
       "published": "2026-10-23T06:00:00Z"
-    },
-    {
-      "headline": "Deutschland importierte im 1. Halbjahr 2026 gut 96 % weniger Waren aus Russland als im 1. Halbjahr 2021",
-      "desc": "Der deutsch-russische Austausch hat seit dem Beginn des Angriffs Russlands auf die Ukraine im Februar 2022 in vielerlei Hinsicht deutlich abgenommen. Im 1. Halbjahr 2026 hat Deutschland …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "down",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N072_51_46.html",
-      "published": "2026-10-21T06:00:00Z"
     }
   ]
 }
