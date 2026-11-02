@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-30T18:35:39Z",
+  "updated": "2026-11-02T10:59:49Z",
   "items": [
+    {
+      "headline": "Einzelhandelsumsatz im September 2026 real um 2,0 % niedriger als im Vormonat",
+      "desc": "Der Umsatz der Einzelhandelsunternehmen in Deutschland ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 kalender- und …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_383_45212.html",
+      "published": "2026-11-02T07:00:00Z"
+    },
     {
       "headline": "Inflationsrate im Oktober 2026 voraussichtlich +2,8 %",
       "desc": "Die Inflationsrate in Deutschland wird im Oktober 2026 voraussichtlich +2,8 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das …",
@@ -143,17 +154,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
       "published": "2026-10-23T08:00:00Z"
-    },
-    {
-      "headline": "Auftragseingang im Bauhauptgewerbe im August 2026: +23,0 % zum Vormonat",
-      "desc": "Der reale (preisbereinigte) Auftragseingang im Bauhauptgewerbe ist im August 2026 gegenüber Juli 2026 kalender- und saisonbereinigt um 23,0 % gestiegen. Bedingt durch mehrere Großaufträge …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_375_441.html",
-      "published": "2026-10-23T06:00:00Z"
     }
   ]
 }
