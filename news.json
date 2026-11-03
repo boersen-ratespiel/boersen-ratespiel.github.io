@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-02T10:59:49Z",
+  "updated": "2026-11-03T10:49:40Z",
   "items": [
+    {
+      "headline": "4,1 % weniger zuckerhaltige Erfrischungsgetränke im Jahr 2025 produziert als im Vorjahr",
+      "desc": "Zur Reduzierung des Zuckerkonsums erheben viele Staaten eine Zuckersteuer auf zuckerhaltige Getränke. Auch die Bundesregierung plant die Einführung einer entsprechenden Abgabe. Die …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N075_42.html",
+      "published": "2026-11-03T07:00:00Z"
+    },
+    {
+      "headline": "Produktion von Nahrungsergänzungsmitteln seit 2019 um 48,4 % gestiegen",
+      "desc": "Nicht nur zur Erkältungszeit greifen viele Menschen gern zu Nahrungsergänzungsmitteln wie Vitamin C, Zink oder Eiweißgetränken. Wie das Statistische Bundesamt (Destatis) mitteilt, wurden …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_45_p002.html",
+      "published": "2026-11-03T07:00:00Z"
+    },
     {
       "headline": "Einzelhandelsumsatz im September 2026 real um 2,0 % niedriger als im Vormonat",
       "desc": "Der Umsatz der Einzelhandelsunternehmen in Deutschland ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 kalender- und …",
@@ -99,28 +121,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_378_713.html",
       "published": "2026-10-29T07:00:00Z"
-    },
-    {
-      "headline": "1,2 % mehr Krankenhausbehandlungen im Jahr 2025",
-      "desc": "Im Jahr 2025 wurden in Deutschland 17,7 Millionen Patientinnen und Patienten vollstationär im Krankenhaus behandelt, das waren 1,2 % oder 203 000 mehr als im Vorjahr. Wie das Statistische …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_376_231.html",
-      "published": "2026-10-28T07:00:00Z"
-    },
-    {
-      "headline": "Bruttosparquote in Deutschland mit 18,9 % im internationalen Vergleich überdurchschnittlich hoch",
-      "desc": "Private Haushalte in Deutschland sparen anteilig mehr als in vielen anderen Industriestaaten. Mit 18,9 % lag die Bruttosparquote im Jahr 2025 deutlich über dem Durchschnitt in der …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_44_p002.html",
-      "published": "2026-10-27T07:00:00Z"
     },
     {
       "headline": "October 2026 euro area bank lending survey",
