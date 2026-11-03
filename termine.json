@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-31T02:20:03Z",
+  "updated": "2026-11-03T02:54:23Z",
   "items": [
-    {
-      "date": "2026-11-02",
-      "time": "08:00",
-      "title": "Umsatz im Einzelhandel",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-11-03",
       "time": "08:00",
