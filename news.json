@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-03T10:49:40Z",
+  "updated": "2026-11-04T14:39:22Z",
   "items": [
+    {
+      "headline": "4,4 % aller Erwerbstätigen in Deutschland sind Führungskräfte",
+      "desc": "Jede 23. erwerbstätige Person in Deutschland hat eine leitende Position inne. Im Jahr 2025 waren 4,4 % aller Erwerbstätigen in Deutschland in einer Führungsposition tätig, wie das …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N076_13.html",
+      "published": "2026-11-04T07:00:00Z"
+    },
+    {
+      "headline": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "published": "2026-11-04T00:00:00Z"
+    },
     {
       "headline": "4,1 % weniger zuckerhaltige Erfrischungsgetränke im Jahr 2025 produziert als im Vorjahr",
       "desc": "Zur Reduzierung des Zuckerkonsums erheben viele Staaten eine Zuckersteuer auf zuckerhaltige Getränke. Auch die Bundesregierung plant die Einführung einer entsprechenden Abgabe. Die …",
@@ -110,17 +132,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
       "published": "2026-10-29T10:00:00Z"
-    },
-    {
-      "headline": "Integrierte kommunale Schulden steigen im Jahr 2025 um 9,9 %",
-      "desc": "Die Schulden der Gemeinden und Gemeindeverbände einschließlich ihrer Beteiligungen beim nicht-öffentlichen Bereich stiegen nach einer Modellrechnung der Statistischen Ämter des Bundes und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "up",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_378_713.html",
-      "published": "2026-10-29T07:00:00Z"
     },
     {
       "headline": "October 2026 euro area bank lending survey",
