@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-04T14:39:22Z",
+  "updated": "2026-11-05T10:51:33Z",
   "items": [
+    {
+      "headline": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
+      "desc": "Nach wie vor bestehen in Deutschland starke regionale Unterschiede bei den Kosten, die Arbeitgeber für eine geleistete Arbeitsstunde zahlen. Wie das Statistische Bundesamt (Destatis) …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_388_624.html",
+      "published": "2026-11-05T07:00:00Z"
+    },
+    {
+      "headline": "Auftragseingang im Verarbeitenden Gewerbe im September 2026: +4,4 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragseingang im Verarbeitenden Gewerbe ist nach vorläufigen Angaben des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 saison …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
+      "published": "2026-11-05T07:00:00Z"
+    },
+    {
+      "headline": "Umsatz im Dienstleistungsbereich im August 2026 um 0,9 % höher als im Vormonat",
+      "desc": "Der Dienstleistungssektor in Deutschland (ohne Finanz- und Versicherungsdienstleistungen) hat im August 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
+      "published": "2026-11-05T07:00:00Z"
+    },
     {
       "headline": "4,4 % aller Erwerbstätigen in Deutschland sind Führungskräfte",
       "desc": "Jede 23. erwerbstätige Person in Deutschland hat eine leitende Position inne. Im Jahr 2025 waren 4,4 % aller Erwerbstätigen in Deutschland in einer Führungsposition tätig, wie das …",
@@ -57,28 +90,6 @@
       "published": "2026-11-02T07:00:00Z"
     },
     {
-      "headline": "Inflationsrate im Oktober 2026 voraussichtlich +2,8 %",
-      "desc": "Die Inflationsrate in Deutschland wird im Oktober 2026 voraussichtlich +2,8 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 3,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html",
-      "published": "2026-10-30T13:00:00Z"
-    },
-    {
-      "headline": "Bruttoinlandsprodukt im 3. Quartal 2026 um 0,2 % höher als im Vorquartal",
-      "desc": "Das Bruttoinlandsprodukt (BIP) ist im 3. Quartal 2026 gegenüber dem 2. Quartal 2026 – preis-, saison- und kalenderbereinigt – um 0,2 % gestiegen, nachdem es bereits in der ersten …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 3,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_381_811.html",
-      "published": "2026-10-30T09:00:00Z"
-    },
-    {
       "headline": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
       "desc": "",
       "source": "Europäische Zentralbank (EZB)",
@@ -88,28 +99,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
       "published": "2026-10-30T09:00:00Z"
-    },
-    {
-      "headline": "Importpreise im September 2026: +10,4 % gegenüber September 2025",
-      "desc": "Die Importpreise waren im September 2026 um 10,4 % höher als im September 2025. Dies war der stärkste Anstieg gegenüber dem Vorjahresmonat seit November 2022 (+12,3 % gegenüber November …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_379_614.html",
-      "published": "2026-10-30T07:00:00Z"
-    },
-    {
-      "headline": "Erwerbstätigkeit im September 2026 saisonbereinigt gegenüber dem Vormonat nahezu unverändert",
-      "desc": "Im September 2026 waren nach Ergebnissen der Erwerbstätigenrechnung rund 45,60 Millionen Personen mit Wohnort in Deutschland (Inländerkonzept) erwerbstätig. Nach vorläufigen Berechnungen …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Arbeit",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_380_132.html",
-      "published": "2026-10-30T07:00:00Z"
     },
     {
       "headline": "Monetary policy decisions",
@@ -154,17 +143,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
       "published": "2026-10-26T09:00:00Z"
-    },
-    {
-      "headline": "ECB Consumer Expectations Survey results – September 2026",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Geldpolitik",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "published": "2026-10-23T08:00:00Z"
     }
   ]
 }
