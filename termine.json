@@ -1,42 +1,6 @@
 {
-  "updated": "2026-11-05T02:25:20Z",
+  "updated": "2026-11-06T00:13:59Z",
   "items": [
-    {
-      "date": "2026-11-05",
-      "time": "08:00",
-      "title": "Arbeitskostenerhebung",
-      "period": "Jahr 2024",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-05",
-      "time": "08:00",
-      "title": "Umsatz im Dienstleistungsbereich",
-      "period": "August 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-05",
-      "time": "08:00",
-      "title": "Verarbeitendes Gewerbe (Auftragseingang und Umsatz)",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-11-06",
       "time": "08:00",
