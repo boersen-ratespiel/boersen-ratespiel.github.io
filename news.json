@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-05T10:51:33Z",
+  "updated": "2026-11-06T15:01:18Z",
   "items": [
+    {
+      "headline": "ECB publishes consolidated banking data for end-June 2026",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Geldpolitik",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "published": "2026-11-06T09:00:00Z"
+    },
+    {
+      "headline": "Produktion im September 2026: +0,7 % zum Vormonat",
+      "desc": "Die reale (preisbereinigte) Produktion im Produzierenden Gewerbe ist nach vorläufigen Angaben des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 saison- und …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_389_421.html",
+      "published": "2026-11-06T07:00:00Z"
+    },
     {
       "headline": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
       "desc": "Nach wie vor bestehen in Deutschland starke regionale Unterschiede bei den Kosten, die Arbeitgeber für eine geleistete Arbeitsstunde zahlen. Wie das Statistische Bundesamt (Destatis) …",
@@ -77,17 +99,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_45_p002.html",
       "published": "2026-11-03T07:00:00Z"
-    },
-    {
-      "headline": "Einzelhandelsumsatz im September 2026 real um 2,0 % niedriger als im Vormonat",
-      "desc": "Der Umsatz der Einzelhandelsunternehmen in Deutschland ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 kalender- und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "down",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_383_45212.html",
-      "published": "2026-11-02T07:00:00Z"
     },
     {
       "headline": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
