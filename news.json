@@ -1,6 +1,17 @@
 {
-  "updated": "2026-11-06T15:01:18Z",
+  "updated": "2026-11-09T07:56:53Z",
   "items": [
+    {
+      "headline": "Exporte im September 2026: +2,0 % zum August 2026",
+      "desc": "Im September 2026 sind die deutschen Exporte gegenüber August 2026 kalender- und saisonbereinigt um 2,0 % und die Importe um 4,2 % gestiegen. Im Vergleich zum Vorjahresmonat September 2025 …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
+      "published": "2026-11-09T07:00:00Z"
+    },
     {
       "headline": "ECB publishes consolidated banking data for end-June 2026",
       "desc": "",
@@ -77,28 +88,6 @@
       "impact": 2,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
       "published": "2026-11-04T00:00:00Z"
-    },
-    {
-      "headline": "4,1 % weniger zuckerhaltige Erfrischungsgetränke im Jahr 2025 produziert als im Vorjahr",
-      "desc": "Zur Reduzierung des Zuckerkonsums erheben viele Staaten eine Zuckersteuer auf zuckerhaltige Getränke. Auch die Bundesregierung plant die Einführung einer entsprechenden Abgabe. Die …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N075_42.html",
-      "published": "2026-11-03T07:00:00Z"
-    },
-    {
-      "headline": "Produktion von Nahrungsergänzungsmitteln seit 2019 um 48,4 % gestiegen",
-      "desc": "Nicht nur zur Erkältungszeit greifen viele Menschen gern zu Nahrungsergänzungsmitteln wie Vitamin C, Zink oder Eiweißgetränken. Wie das Statistische Bundesamt (Destatis) mitteilt, wurden …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_45_p002.html",
-      "published": "2026-11-03T07:00:00Z"
     },
     {
       "headline": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
