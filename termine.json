@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T02:05:50Z",
+  "updated": "2026-11-10T23:17:26Z",
   "items": [
     {
       "date": "2026-11-11",
@@ -84,6 +84,30 @@
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "14:30",
+      "title": "GDP (Second Estimate) and Corporate Profits, 3rd Quarter 2026",
+      "period": "",
+      "hint": "US-Wirtschaftsleistung (BIP)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "14:30",
+      "title": "Personal Income and Outlays, October 2026",
+      "period": "",
+      "hint": "Einkommen und Konsum in den USA, inkl. PCE-Inflation (wichtigstes Inflationsmaß der Fed)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
     }
   ]
 }
