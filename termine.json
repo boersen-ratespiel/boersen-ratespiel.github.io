@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-06T15:01:20Z",
+  "updated": "2026-11-10T02:05:50Z",
   "items": [
-    {
-      "date": "2026-11-09",
-      "time": "08:00",
-      "title": "Außenhandel",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-11-11",
       "time": "08:00",
