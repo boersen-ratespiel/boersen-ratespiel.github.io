@@ -1,6 +1,17 @@
 {
-  "updated": "2026-11-09T07:56:53Z",
+  "updated": "2026-11-10T09:46:16Z",
   "items": [
+    {
+      "headline": "13,2 Millionen Behandlungen in Notfallambulanzen im Jahr 2025",
+      "desc": "Die Notfallambulanzen sind oft erste Anlaufstelle bei akuten gesundheitlichen Beschwerden und Teil der ärztlichen Grundversorgung in Deutschland. Wie das Statistische Bundesamt (Destatis) …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_46_p002.html",
+      "published": "2026-11-10T07:00:00Z"
+    },
     {
       "headline": "Exporte im September 2026: +2,0 % zum August 2026",
       "desc": "Im September 2026 sind die deutschen Exporte gegenüber August 2026 kalender- und saisonbereinigt um 2,0 % und die Importe um 4,2 % gestiegen. Im Vergleich zum Vorjahresmonat September 2025 …",
@@ -132,17 +143,6 @@
       "impact": 2,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
       "published": "2026-10-27T00:00:00Z"
-    },
-    {
-      "headline": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
-      "published": "2026-10-26T09:00:00Z"
     }
   ]
 }
