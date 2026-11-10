@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T09:46:16Z",
+  "updated": "2026-11-10T17:48:50Z",
   "items": [
     {
       "headline": "13,2 Millionen Behandlungen in Notfallambulanzen im Jahr 2025",
@@ -46,14 +46,14 @@
       "published": "2026-11-06T07:00:00Z"
     },
     {
-      "headline": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
-      "desc": "Nach wie vor bestehen in Deutschland starke regionale Unterschiede bei den Kosten, die Arbeitgeber für eine geleistete Arbeitsstunde zahlen. Wie das Statistische Bundesamt (Destatis) …",
+      "headline": "Umsatz im Dienstleistungsbereich im August 2026 um 0,9 % höher als im Vormonat",
+      "desc": "Der Dienstleistungssektor in Deutschland (ohne Finanz- und Versicherungsdienstleistungen) hat im August 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender …",
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
-      "category": "Arbeit",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_388_624.html",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
       "published": "2026-11-05T07:00:00Z"
     },
     {
@@ -68,26 +68,15 @@
       "published": "2026-11-05T07:00:00Z"
     },
     {
-      "headline": "Umsatz im Dienstleistungsbereich im August 2026 um 0,9 % höher als im Vormonat",
-      "desc": "Der Dienstleistungssektor in Deutschland (ohne Finanz- und Versicherungsdienstleistungen) hat im August 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
-      "published": "2026-11-05T07:00:00Z"
-    },
-    {
-      "headline": "4,4 % aller Erwerbstätigen in Deutschland sind Führungskräfte",
-      "desc": "Jede 23. erwerbstätige Person in Deutschland hat eine leitende Position inne. Im Jahr 2025 waren 4,4 % aller Erwerbstätigen in Deutschland in einer Führungsposition tätig, wie das …",
+      "headline": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
+      "desc": "Nach wie vor bestehen in Deutschland starke regionale Unterschiede bei den Kosten, die Arbeitgeber für eine geleistete Arbeitsstunde zahlen. Wie das Statistische Bundesamt (Destatis) …",
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "category": "Arbeit",
       "trend": "flat",
       "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N076_13.html",
-      "published": "2026-11-04T07:00:00Z"
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_388_624.html",
+      "published": "2026-11-05T07:00:00Z"
     },
     {
       "headline": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
@@ -132,17 +121,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
       "published": "2026-10-29T10:00:00Z"
-    },
-    {
-      "headline": "October 2026 euro area bank lending survey",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
-      "published": "2026-10-27T00:00:00Z"
     }
   ]
 }
