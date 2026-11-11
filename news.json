@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-10T17:48:50Z",
+  "updated": "2026-11-11T14:20:02Z",
   "items": [
+    {
+      "headline": "70 % der Eingewanderten sind erwerbstätig",
+      "desc": "Nach Deutschland Eingewanderte sind deutlich häufiger erwerbstätig als früher. 70 % der Eingewanderten im Alter von 15 bis 64 Jahren waren im Jahr 2025 erwerbstätig. Wie das Statistische …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N078_13.html",
+      "published": "2026-11-11T12:00:00Z"
+    },
+    {
+      "headline": "Inflationsrate im Oktober 2026 bei +2,8 %",
+      "desc": "Die Inflationsrate in Deutschland – gemessen als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat – lag im Oktober 2026 bei +2,8 %. Damit hat sich der Anstieg der …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 3,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html",
+      "published": "2026-11-11T07:00:00Z"
+    },
     {
       "headline": "13,2 Millionen Behandlungen in Notfallambulanzen im Jahr 2025",
       "desc": "Die Notfallambulanzen sind oft erste Anlaufstelle bei akuten gesundheitlichen Beschwerden und Teil der ärztlichen Grundversorgung in Deutschland. Wie das Statistische Bundesamt (Destatis) …",
@@ -54,28 +76,6 @@
       "trend": "up",
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
-      "published": "2026-11-05T07:00:00Z"
-    },
-    {
-      "headline": "Auftragseingang im Verarbeitenden Gewerbe im September 2026: +4,4 % zum Vormonat",
-      "desc": "Der reale (preisbereinigte) Auftragseingang im Verarbeitenden Gewerbe ist nach vorläufigen Angaben des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 saison …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
-      "published": "2026-11-05T07:00:00Z"
-    },
-    {
-      "headline": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
-      "desc": "Nach wie vor bestehen in Deutschland starke regionale Unterschiede bei den Kosten, die Arbeitgeber für eine geleistete Arbeitsstunde zahlen. Wie das Statistische Bundesamt (Destatis) …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Arbeit",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_388_624.html",
       "published": "2026-11-05T07:00:00Z"
     },
     {
