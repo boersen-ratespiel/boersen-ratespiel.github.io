@@ -1,30 +1,6 @@
 {
-  "updated": "2026-11-10T23:17:26Z",
+  "updated": "2026-11-12T02:57:11Z",
   "items": [
-    {
-      "date": "2026-11-11",
-      "time": "08:00",
-      "title": "Verbraucherpreisindex (inklusive Harmonisierter Verbraucherpreisindex), endgültige Ergebnisse",
-      "period": "Oktober 2026",
-      "hint": "",
-      "region": "DE",
-      "key": true,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-11",
-      "time": "08:00",
-      "title": "Zur Aktualisierung des Dashboards Integration: Erwerbstätigkeit und Erwerbseinkommen von Eingewanderten und deren Nachkommen, 13 Uhr",
-      "period": "Jahr 2025",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-11-12",
       "time": "08:00",
