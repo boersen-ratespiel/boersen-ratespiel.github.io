@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-11T14:20:02Z",
+  "updated": "2026-11-12T11:02:53Z",
   "items": [
+    {
+      "headline": "Pflege: 10 % der Erwerbstätigen von 25 bis 64 Jahren betreuen Angehörige",
+      "desc": "Nicht nur die Kinderbetreuung, sondern auch die Pflege von Angehörigen stellt viele Menschen bei der Vereinbarkeit von Familie und Berufsleben vor Herausforderungen. 10 % der Erwerbstätigen …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N079_23.html",
+      "published": "2026-11-12T07:00:00Z"
+    },
+    {
+      "headline": "Statistik der Grundsteuerwerte zeigt strukturelle Unterschiede in der Verteilung des Grundbesitzes in Deutschland",
+      "desc": "Die Mehrheit des Grundbesitzes in Deutschland befindet sich im Eigentum natürlicher Personen. Zum Stichtag 1. Januar 2022 waren 81,3 % der wirtschaftlichen Einheiten des Grundvermögens und …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_395_73.html",
+      "published": "2026-11-12T07:00:00Z"
+    },
     {
       "headline": "70 % der Eingewanderten sind erwerbstätig",
       "desc": "Nach Deutschland Eingewanderte sind deutlich häufiger erwerbstätig als früher. 70 % der Eingewanderten im Alter von 15 bis 64 Jahren waren im Jahr 2025 erwerbstätig. Wie das Statistische …",
@@ -55,28 +77,6 @@
       "impact": 1,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
       "published": "2026-11-06T09:00:00Z"
-    },
-    {
-      "headline": "Produktion im September 2026: +0,7 % zum Vormonat",
-      "desc": "Die reale (preisbereinigte) Produktion im Produzierenden Gewerbe ist nach vorläufigen Angaben des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 saison- und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_389_421.html",
-      "published": "2026-11-06T07:00:00Z"
-    },
-    {
-      "headline": "Umsatz im Dienstleistungsbereich im August 2026 um 0,9 % höher als im Vormonat",
-      "desc": "Der Dienstleistungssektor in Deutschland (ohne Finanz- und Versicherungsdienstleistungen) hat im August 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
-      "published": "2026-11-05T07:00:00Z"
     },
     {
       "headline": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
