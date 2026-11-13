@@ -1,6 +1,50 @@
 {
-  "updated": "2026-11-12T11:02:53Z",
+  "updated": "2026-11-13T07:55:16Z",
   "items": [
+    {
+      "headline": "Erzeugerpreise landwirtschaftlicher Produkte im September 2026: -4,6 % gegenüber September 2025",
+      "desc": "Die Erzeugerpreise landwirtschaftlicher Produkte waren im September 2026 um 4,6 % niedriger als im September 2025. Im August 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_397_61211.html",
+      "published": "2026-11-13T07:00:00Z"
+    },
+    {
+      "headline": "4,5 % mehr Gründungen größerer Betriebe im 1. bis 3. Quartal 2026 als im Vorjahreszeitraum",
+      "desc": "In den ersten drei Quartalen des Jahres 2026 wurden in Deutschland rund 103 700 Betriebe gegründet, deren Rechtsform und Beschäftigtenzahl auf eine größere wirtschaftliche Bedeutung …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_399_52311.html",
+      "published": "2026-11-13T07:00:00Z"
+    },
+    {
+      "headline": "Großhandelspreise im Oktober 2026: +8,8 % gegenüber Oktober 2025",
+      "desc": "Die Verkaufspreise im Großhandel waren im Oktober 2026 um 8,8 % höher als im Oktober 2025. Im September 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei +8,7 % gelegen, im …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Preise",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_396_61281.html",
+      "published": "2026-11-13T07:00:00Z"
+    },
+    {
+      "headline": "Unternehmensinsolvenzen im August 2026: +4,4 % gegenüber August 2025",
+      "desc": "Im August 2026 haben die deutschen Amtsgerichte 2 067 beantragte Unternehmensinsolvenzen registriert. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 4,4 % mehr als im …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_398_52411.html",
+      "published": "2026-11-13T07:00:00Z"
+    },
     {
       "headline": "Pflege: 10 % der Erwerbstätigen von 25 bis 64 Jahren betreuen Angehörige",
       "desc": "Nicht nur die Kinderbetreuung, sondern auch die Pflege von Angehörigen stellt viele Menschen bei der Vereinbarkeit von Familie und Berufsleben vor Herausforderungen. 10 % der Erwerbstätigen …",
@@ -46,28 +90,6 @@
       "published": "2026-11-11T07:00:00Z"
     },
     {
-      "headline": "13,2 Millionen Behandlungen in Notfallambulanzen im Jahr 2025",
-      "desc": "Die Notfallambulanzen sind oft erste Anlaufstelle bei akuten gesundheitlichen Beschwerden und Teil der ärztlichen Grundversorgung in Deutschland. Wie das Statistische Bundesamt (Destatis) …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_46_p002.html",
-      "published": "2026-11-10T07:00:00Z"
-    },
-    {
-      "headline": "Exporte im September 2026: +2,0 % zum August 2026",
-      "desc": "Im September 2026 sind die deutschen Exporte gegenüber August 2026 kalender- und saisonbereinigt um 2,0 % und die Importe um 4,2 % gestiegen. Im Vergleich zum Vorjahresmonat September 2025 …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
-      "published": "2026-11-09T07:00:00Z"
-    },
-    {
       "headline": "ECB publishes consolidated banking data for end-June 2026",
       "desc": "",
       "source": "Europäische Zentralbank (EZB)",
@@ -110,17 +132,6 @@
       "impact": 3,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
       "published": "2026-10-29T13:15:00Z"
-    },
-    {
-      "headline": "ECB President Lagarde to step down on 7 February 2027",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Geldpolitik",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-      "published": "2026-10-29T10:00:00Z"
     }
   ]
 }
