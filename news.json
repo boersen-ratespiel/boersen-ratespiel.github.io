@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T16:19:36Z",
+  "updated": "2026-11-14T10:22:12Z",
   "items": [
     {
       "headline": "Erzeugerpreise landwirtschaftlicher Produkte im September 2026: -4,6 % gegenüber September 2025",
@@ -110,17 +110,6 @@
       "impact": 2,
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
       "published": "2026-11-04T00:00:00Z"
-    },
-    {
-      "headline": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Geldpolitik",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "published": "2026-10-30T09:00:00Z"
     }
   ]
 }
