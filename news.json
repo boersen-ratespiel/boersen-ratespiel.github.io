@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-14T10:22:12Z",
+  "updated": "2026-11-16T09:38:32Z",
   "items": [
+    {
+      "headline": "Energieverbrauch der Industrie 2025 um 2,9 % gesunken",
+      "desc": "Die deutsche Industrie hat im Jahr 2025 insgesamt 3 248 Petajoule Energie verbraucht. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 2,9 % weniger Energie als im Vorjahr. …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_400_435.html",
+      "published": "2026-11-16T07:00:00Z"
+    },
+    {
+      "headline": "1,4 % weniger wissenschaftliches Hochschulpersonal im Jahr 2025",
+      "desc": "An den deutschen Hochschulen und Hochschulkliniken waren zum Jahresende 2025 rund 809 400 Personen beschäftigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 0,5 % oder rund …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_401_213.html",
+      "published": "2026-11-16T07:00:00Z"
+    },
     {
       "headline": "Erzeugerpreise landwirtschaftlicher Produkte im September 2026: -4,6 % gegenüber September 2025",
       "desc": "Die Erzeugerpreise landwirtschaftlicher Produkte waren im September 2026 um 4,6 % niedriger als im September 2025. Im August 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei …",
