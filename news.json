@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T09:38:32Z",
+  "updated": "2026-11-17T13:21:41Z",
   "items": [
     {
       "headline": "Energieverbrauch der Industrie 2025 um 2,9 % gesunken",
@@ -88,28 +88,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_395_73.html",
       "published": "2026-11-12T07:00:00Z"
-    },
-    {
-      "headline": "70 % der Eingewanderten sind erwerbstätig",
-      "desc": "Nach Deutschland Eingewanderte sind deutlich häufiger erwerbstätig als früher. 70 % der Eingewanderten im Alter von 15 bis 64 Jahren waren im Jahr 2025 erwerbstätig. Wie das Statistische …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Arbeit",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N078_13.html",
-      "published": "2026-11-11T12:00:00Z"
-    },
-    {
-      "headline": "Inflationsrate im Oktober 2026 bei +2,8 %",
-      "desc": "Die Inflationsrate in Deutschland – gemessen als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat – lag im Oktober 2026 bei +2,8 %. Damit hat sich der Anstieg der …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 3,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html",
-      "published": "2026-11-11T07:00:00Z"
     },
     {
       "headline": "ECB publishes consolidated banking data for end-June 2026",
