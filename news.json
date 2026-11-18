@@ -1,6 +1,50 @@
 {
-  "updated": "2026-11-17T13:21:41Z",
+  "updated": "2026-11-18T13:56:04Z",
   "items": [
+    {
+      "headline": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "desc": "",
+      "source": "Europäische Zentralbank (EZB)",
+      "lang": "en",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "published": "2026-11-18T09:00:00Z"
+    },
+    {
+      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im September 2026: +0,8 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_403_421.html",
+      "published": "2026-11-18T07:00:00Z"
+    },
+    {
+      "headline": "Erwerbstätigkeit im 3. Quartal 2026 saisonbereinigt gegenüber dem Vorquartal gesunken",
+      "desc": "Im 3. Quartal 2026 waren rund 45,67 Millionen Personen mit Arbeitsort in Deutschland (Inlandskonzept) erwerbstätig. Nach vorläufigen Berechnungen des Statistischen Bundesamtes (Destatis) …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "down",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_404_13321.html",
+      "published": "2026-11-18T07:00:00Z"
+    },
+    {
+      "headline": "Baugenehmigungen für Wohnungen im September 2026: -14,8 % zum Vorjahresmonat",
+      "desc": "Im September 2026 wurde in Deutschland der Bau von 20 800 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 14,8 % oder 3 600 Baugenehmigungen weniger als …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "down",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_402_3111.html",
+      "published": "2026-11-18T07:00:00Z"
+    },
     {
       "headline": "Energieverbrauch der Industrie 2025 um 2,9 % gesunken",
       "desc": "Die deutsche Industrie hat im Jahr 2025 insgesamt 3 248 Petajoule Energie verbraucht. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 2,9 % weniger Energie als im Vorjahr. …",
@@ -55,39 +99,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_396_61281.html",
       "published": "2026-11-13T07:00:00Z"
-    },
-    {
-      "headline": "Unternehmensinsolvenzen im August 2026: +4,4 % gegenüber August 2025",
-      "desc": "Im August 2026 haben die deutschen Amtsgerichte 2 067 beantragte Unternehmensinsolvenzen registriert. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 4,4 % mehr als im …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_398_52411.html",
-      "published": "2026-11-13T07:00:00Z"
-    },
-    {
-      "headline": "Pflege: 10 % der Erwerbstätigen von 25 bis 64 Jahren betreuen Angehörige",
-      "desc": "Nicht nur die Kinderbetreuung, sondern auch die Pflege von Angehörigen stellt viele Menschen bei der Vereinbarkeit von Familie und Berufsleben vor Herausforderungen. 10 % der Erwerbstätigen …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Arbeit",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N079_23.html",
-      "published": "2026-11-12T07:00:00Z"
-    },
-    {
-      "headline": "Statistik der Grundsteuerwerte zeigt strukturelle Unterschiede in der Verteilung des Grundbesitzes in Deutschland",
-      "desc": "Die Mehrheit des Grundbesitzes in Deutschland befindet sich im Eigentum natürlicher Personen. Zum Stichtag 1. Januar 2022 waren 81,3 % der wirtschaftlichen Einheiten des Grundvermögens und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_395_73.html",
-      "published": "2026-11-12T07:00:00Z"
     },
     {
       "headline": "ECB publishes consolidated banking data for end-June 2026",
