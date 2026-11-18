@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T03:50:42Z",
+  "updated": "2026-11-18T04:17:46Z",
   "items": [
     {
       "date": "2026-11-18",
@@ -103,6 +103,18 @@
       "title": "Personal Income and Outlays, October 2026",
       "period": "",
       "hint": "Einkommen und Konsum in den USA, inkl. PCE-Inflation (wichtigstes Inflationsmaß der Fed)",
+      "region": "US",
+      "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-12-02",
+      "time": "14:30",
+      "title": "GDP by County and Personal Income by County, 2025",
+      "period": "",
+      "hint": "US-Wirtschaftsleistung (BIP)",
       "region": "US",
       "key": true,
       "source": "U.S. Bureau of Economic Analysis (BEA)",
