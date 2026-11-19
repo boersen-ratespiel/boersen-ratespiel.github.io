@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-19T03:24:10Z",
+  "updated": "2026-11-19T13:01:07Z",
   "items": [
+    {
+      "headline": "5,7 % der Bevölkerung konnten 2025 aus Geldmangel ihre Wohnung nicht angemessen warmhalten",
+      "desc": "Für einige Menschen in Deutschland ist ein warmes Zuhause nicht selbstverständlich. Im Jahr 2025 lebten rund 4,7 Millionen Menschen hierzulande in Haushalten, die nach eigener Einschätzung …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N081_61_63.html",
+      "published": "2026-11-19T07:00:00Z"
+    },
+    {
+      "headline": "KORREKTUR: Gastgewerbeumsatz im September 2026 real 1,2 % höher als im Vormonat",
+      "desc": "Das Gastgewerbe in Deutschland hat im September 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,2 % und …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "up",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_405_45213.html",
+      "published": "2026-11-19T07:00:00Z"
+    },
     {
       "headline": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
       "desc": "",
@@ -76,28 +98,6 @@
       "trend": "down",
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_397_61211.html",
-      "published": "2026-11-13T07:00:00Z"
-    },
-    {
-      "headline": "4,5 % mehr Gründungen größerer Betriebe im 1. bis 3. Quartal 2026 als im Vorjahreszeitraum",
-      "desc": "In den ersten drei Quartalen des Jahres 2026 wurden in Deutschland rund 103 700 Betriebe gegründet, deren Rechtsform und Beschäftigtenzahl auf eine größere wirtschaftliche Bedeutung …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_399_52311.html",
-      "published": "2026-11-13T07:00:00Z"
-    },
-    {
-      "headline": "Großhandelspreise im Oktober 2026: +8,8 % gegenüber Oktober 2025",
-      "desc": "Die Verkaufspreise im Großhandel waren im Oktober 2026 um 8,8 % höher als im Oktober 2025. Im September 2026 hatte die Veränderungsrate gegenüber dem Vorjahresmonat bei +8,7 % gelegen, im …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_396_61281.html",
       "published": "2026-11-13T07:00:00Z"
     },
     {
