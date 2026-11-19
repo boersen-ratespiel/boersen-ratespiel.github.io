@@ -1,42 +1,6 @@
 {
-  "updated": "2026-11-18T04:17:46Z",
+  "updated": "2026-11-19T03:24:13Z",
   "items": [
-    {
-      "date": "2026-11-18",
-      "time": "08:00",
-      "title": "Baugenehmigungen",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-18",
-      "time": "08:00",
-      "title": "Verarbeitendes Gewerbe (Auftragsbestand)",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-18",
-      "time": "08:00",
-      "title": "Vierteljährliche Arbeitsmarktstatistik, tiefer gegliederte Ergebnisse (Erwerbstätigenzahl, Arbeitszeit und -volumen, nach Wirtschaftszweigen)",
-      "period": "3. Quartal 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-11-19",
       "time": "08:00",
