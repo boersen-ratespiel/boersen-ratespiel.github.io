@@ -1,10 +1,46 @@
 {
-  "updated": "2026-11-20T03:11:38Z",
+  "updated": "2026-11-20T11:34:58Z",
   "items": [
     {
-      "date": "2026-11-20",
+      "date": "2026-11-23",
       "time": "08:00",
-      "title": "Außenhandel (Detailergebnisse)",
+      "title": "Spendenverhalten in Bund und Ländern (Ergebnisse der Lohn- und Einkommensteuerstatistik)",
+      "period": "Jahr 2022",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "08:00",
+      "title": "Einsatz von künstlicher Intelligenz in Unternehmen",
+      "period": "Jahr 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "08:00",
+      "title": "Preisentwicklung bei IT-Produkten und Elektroartikeln",
+      "period": "Januar 2020 bis Oktober 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "08:00",
+      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
       "period": "September 2026",
       "hint": "",
       "region": "DE",
@@ -14,13 +50,13 @@
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
-      "date": "2026-11-20",
+      "date": "2026-11-25",
       "time": "08:00",
-      "title": "Erzeugerpreise gewerblicher Produkte",
-      "period": "Oktober 2026",
+      "title": "Bruttoinlandsprodukt, tiefer gegliederte Ergebnisse",
+      "period": "3. Quartal 2026",
       "hint": "",
       "region": "DE",
-      "key": false,
+      "key": true,
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
@@ -48,6 +84,42 @@
       "source": "U.S. Bureau of Economic Analysis (BEA)",
       "lang": "en",
       "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "08:00",
+      "title": "Nominallohn-/Reallohnindex",
+      "period": "3. Quartal 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "08:00",
+      "title": "Zahlen zum Advent: Produktion von Schokolade, Außenhandel mit Schokolade und Weihnachtsbäumen, EU-Produktion von Lebkuchen, Sektverbrauch, Reiseverhalten zu den Weihnachtsmarkt-Hochburgen",
+      "period": "Jahr 2025",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-27",
+      "time": "08:00",
+      "title": "Monatliche Arbeitsmarktstatistik (Erwerbstätige, Erwerbslose, Erwerbslosenquote)",
+      "period": "Oktober 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
       "date": "2026-12-02",
