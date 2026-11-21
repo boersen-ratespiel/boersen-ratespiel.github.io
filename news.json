@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T11:34:57Z",
+  "updated": "2026-11-21T09:47:08Z",
   "items": [
     {
       "headline": "Elektrischer Strom im Wert von 4,3 Milliarden Euro im 1. bis 3. Quartal 2026 exportiert",
@@ -99,17 +99,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_400_435.html",
       "published": "2026-11-16T07:00:00Z"
-    },
-    {
-      "headline": "ECB publishes consolidated banking data for end-June 2026",
-      "desc": "",
-      "source": "Europäische Zentralbank (EZB)",
-      "lang": "en",
-      "category": "Geldpolitik",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "published": "2026-11-06T09:00:00Z"
     }
   ]
 }
