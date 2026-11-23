@@ -1,6 +1,17 @@
 {
-  "updated": "2026-11-21T09:47:08Z",
+  "updated": "2026-11-23T08:59:47Z",
   "items": [
+    {
+      "headline": "14,7 % mehr Spenden im Jahr 2022 als im Vorjahr",
+      "desc": "Weihnachtszeit ist Spendenzeit: Im Jahr 2022 haben 12,5 Millionen Steuerpflichtige in Deutschland Spenden in Höhe von insgesamt 9,53 Milliarden Euro geleistet. Wie das Statistische …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N082_73.html",
+      "published": "2026-11-23T07:00:00Z"
+    },
     {
       "headline": "Elektrischer Strom im Wert von 4,3 Milliarden Euro im 1. bis 3. Quartal 2026 exportiert",
       "desc": "In den ersten drei Quartalen des Jahres 2026 wurden 48,8 Terawattstunden elektrischer Strom im Wert von 4,3 Milliarden Euro aus Deutschland exportiert. Wie das Statistische Bundesamt …",
@@ -57,17 +68,6 @@
       "published": "2026-11-18T09:00:00Z"
     },
     {
-      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im September 2026: +0,8 % zum Vormonat",
-      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_403_421.html",
-      "published": "2026-11-18T07:00:00Z"
-    },
-    {
       "headline": "Erwerbstätigkeit im 3. Quartal 2026 saisonbereinigt gegenüber dem Vorquartal gesunken",
       "desc": "Im 3. Quartal 2026 waren rund 45,67 Millionen Personen mit Arbeitsort in Deutschland (Inlandskonzept) erwerbstätig. Nach vorläufigen Berechnungen des Statistischen Bundesamtes (Destatis) …",
       "source": "Statistisches Bundesamt (Destatis)",
@@ -90,15 +90,15 @@
       "published": "2026-11-18T07:00:00Z"
     },
     {
-      "headline": "Energieverbrauch der Industrie 2025 um 2,9 % gesunken",
-      "desc": "Die deutsche Industrie hat im Jahr 2025 insgesamt 3 248 Petajoule Energie verbraucht. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 2,9 % weniger Energie als im Vorjahr. …",
+      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im September 2026: +0,8 % zum Vormonat",
+      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 …",
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "category": "Konjunktur",
-      "trend": "down",
+      "trend": "up",
       "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_400_435.html",
-      "published": "2026-11-16T07:00:00Z"
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_403_421.html",
+      "published": "2026-11-18T07:00:00Z"
     }
   ]
 }
