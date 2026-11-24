@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-20T11:34:58Z",
+  "updated": "2026-11-24T05:59:36Z",
   "items": [
-    {
-      "date": "2026-11-23",
-      "time": "08:00",
-      "title": "Spendenverhalten in Bund und Ländern (Ergebnisse der Lohn- und Einkommensteuerstatistik)",
-      "period": "Jahr 2022",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
     {
       "date": "2026-11-24",
       "time": "08:00",
@@ -129,6 +117,18 @@
       "hint": "US-Wirtschaftsleistung (BIP)",
       "region": "US",
       "key": true,
+      "source": "U.S. Bureau of Economic Analysis (BEA)",
+      "lang": "en",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-12-08",
+      "time": "14:30",
+      "title": "U.S. International Trade in Goods and Services, October 2026",
+      "period": "",
+      "hint": "Außenhandel der USA",
+      "region": "US",
+      "key": false,
       "source": "U.S. Bureau of Economic Analysis (BEA)",
       "lang": "en",
       "url": "https://www.bea.gov/news/schedule"
