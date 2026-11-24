@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-23T21:19:04Z",
+  "updated": "2026-11-24T17:39:56Z",
   "items": [
+    {
+      "headline": "98 % der Feuerwerk-Importe im Jahr 2025 kamen aus China",
+      "desc": "Die aus dem Ausland importierten Böller, Raketen und Co. kommen fast ausschließlich aus China. Im Jahr 2025 stammten 98 % der nach Deutschland importierten Feuerwerkskörper aus der …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "flat",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_48_p002.html",
+      "published": "2026-11-24T07:00:00Z"
+    },
+    {
+      "headline": "Mehr als jedes dritte Unternehmen nutzt 2026 künstliche Intelligenz",
+      "desc": "Mehr als jedes dritte Unternehmen (37 %) in Deutschland mit mindestens 10 Beschäftigten nutzt im Jahr 2026 Technologien der künstlichen Intelligenz (KI). Wie das Statistische Bundesamt …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_408_52911.html",
+      "published": "2026-11-24T07:00:00Z"
+    },
+    {
+      "headline": "Computer und Spielekonsolen im Oktober 2026 deutlich teurer als ein Jahr zuvor",
+      "desc": "Ob Laptop, Spielekonsole oder Kaffeemaschine – vor Weihnachten wirbt der Handel mit vielen Angeboten für elektronische Geräte. Gerade Computer haben sich zuletzt deutlich verteuert. Wie das …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "flat",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N083_61.html",
+      "published": "2026-11-24T07:00:00Z"
+    },
     {
       "headline": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
       "desc": "",
@@ -98,17 +131,6 @@
       "trend": "down",
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_402_3111.html",
-      "published": "2026-11-18T07:00:00Z"
-    },
-    {
-      "headline": "Auftragsbestand im Verarbeitenden Gewerbe im September 2026: +0,8 % zum Vormonat",
-      "desc": "Der reale (preisbereinigte) Auftragsbestand im Verarbeitenden Gewerbe ist nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) im September 2026 gegenüber August 2026 …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_403_421.html",
       "published": "2026-11-18T07:00:00Z"
     }
   ]
