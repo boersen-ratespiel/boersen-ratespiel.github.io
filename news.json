@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-25T22:29:48Z",
+  "updated": "2026-11-26T15:11:51Z",
   "items": [
+    {
+      "headline": "Reallöhne im 3. Quartal 2026 um 1,3 % höher als im Vorjahresquartal",
+      "desc": "Die Reallöhne der Arbeitnehmerinnen und Arbeitnehmer in Deutschland waren im 3. Quartal 2026 um 1,3 % höher als im Vorjahresquartal. Wie das Statistische Bundesamt (Destatis) weiter …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Wirtschaft",
+      "trend": "up",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_411_62321.html",
+      "published": "2026-11-26T07:00:00Z"
+    },
+    {
+      "headline": "Zahlen zum Advent: Heimische Produktion von Schokolade geht zurück",
+      "desc": "Der erste Advent steht vor der Tür, da lohnt sich ein Blick auf ausgewählte Zahlen und Daten zur Advents- und Weihnachtszeit. Im Jahr 2025 wurden hierzulande 1,0 Millionen Tonnen …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Konjunktur",
+      "trend": "flat",
+      "impact": 2,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N084_51_42.html",
+      "published": "2026-11-26T07:00:00Z"
+    },
     {
       "headline": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
       "desc": "",
@@ -121,28 +143,6 @@
       "impact": 2,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
       "published": "2026-11-20T07:00:00Z"
-    },
-    {
-      "headline": "5,7 % der Bevölkerung konnten 2025 aus Geldmangel ihre Wohnung nicht angemessen warmhalten",
-      "desc": "Für einige Menschen in Deutschland ist ein warmes Zuhause nicht selbstverständlich. Im Jahr 2025 lebten rund 4,7 Millionen Menschen hierzulande in Haushalten, die nach eigener Einschätzung …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Wirtschaft",
-      "trend": "flat",
-      "impact": 1,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N081_61_63.html",
-      "published": "2026-11-19T07:00:00Z"
-    },
-    {
-      "headline": "KORREKTUR: Gastgewerbeumsatz im September 2026 real 1,2 % höher als im Vormonat",
-      "desc": "Das Gastgewerbe in Deutschland hat im September 2026 nach vorläufigen Ergebnissen des Statistischen Bundesamtes (Destatis) kalender- und saisonbereinigt real (preisbereinigt) 1,2 % und …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_405_45213.html",
-      "published": "2026-11-19T07:00:00Z"
     },
     {
       "headline": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
