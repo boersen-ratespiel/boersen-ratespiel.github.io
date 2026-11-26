@@ -1,54 +1,6 @@
 {
-  "updated": "2026-11-25T02:24:25Z",
+  "updated": "2026-11-26T05:00:22Z",
   "items": [
-    {
-      "date": "2026-11-25",
-      "time": "08:00",
-      "title": "Bauhauptgewerbe (Auftragseingang und Umsatz)",
-      "period": "September 2026",
-      "hint": "",
-      "region": "DE",
-      "key": false,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-25",
-      "time": "08:00",
-      "title": "Bruttoinlandsprodukt, tiefer gegliederte Ergebnisse",
-      "period": "3. Quartal 2026",
-      "hint": "",
-      "region": "DE",
-      "key": true,
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
-    },
-    {
-      "date": "2026-11-25",
-      "time": "14:30",
-      "title": "GDP (Second Estimate) and Corporate Profits, 3rd Quarter 2026",
-      "period": "",
-      "hint": "US-Wirtschaftsleistung (BIP)",
-      "region": "US",
-      "key": true,
-      "source": "U.S. Bureau of Economic Analysis (BEA)",
-      "lang": "en",
-      "url": "https://www.bea.gov/news/schedule"
-    },
-    {
-      "date": "2026-11-25",
-      "time": "14:30",
-      "title": "Personal Income and Outlays, October 2026",
-      "period": "",
-      "hint": "Einkommen und Konsum in den USA, inkl. PCE-Inflation (wichtigstes Inflationsmaß der Fed)",
-      "region": "US",
-      "key": true,
-      "source": "U.S. Bureau of Economic Analysis (BEA)",
-      "lang": "en",
-      "url": "https://www.bea.gov/news/schedule"
-    },
     {
       "date": "2026-11-26",
       "time": "08:00",
