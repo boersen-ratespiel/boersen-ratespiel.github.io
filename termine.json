@@ -1,14 +1,38 @@
 {
-  "updated": "2026-11-26T23:49:57Z",
+  "updated": "2026-11-27T18:56:34Z",
   "items": [
     {
-      "date": "2026-11-27",
+      "date": "2026-11-30",
       "time": "08:00",
-      "title": "Monatliche Arbeitsmarktstatistik (Erwerbstätige, Erwerbslose, Erwerbslosenquote)",
+      "title": "Außenhandelspreise",
       "period": "Oktober 2026",
       "hint": "",
       "region": "DE",
       "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-30",
+      "time": "08:00",
+      "title": "Umsatz im Einzelhandel",
+      "period": "Oktober 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-11-30",
+      "time": "08:00",
+      "title": "Verbraucherpreisindex (inklusive Harmonisierter Verbraucherpreisindex), vorläufige Ergebnisse (im Laufe des Tages)",
+      "period": "November 2026",
+      "hint": "",
+      "region": "DE",
+      "key": true,
       "source": "Statistisches Bundesamt (Destatis)",
       "lang": "de",
       "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
@@ -24,6 +48,42 @@
       "source": "U.S. Bureau of Economic Analysis (BEA)",
       "lang": "en",
       "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "date": "2026-12-03",
+      "time": "08:00",
+      "title": "Überschuldete Personen mit Schulden bei Onlinehändlern",
+      "period": "Jahr 2025",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-12-04",
+      "time": "08:00",
+      "title": "Stromerzeugung nach Energieträgern (einschl. Stromim- und exporte)",
+      "period": "3. Quartal 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
+    },
+    {
+      "date": "2026-12-04",
+      "time": "08:00",
+      "title": "Umsatz im Dienstleistungsbereich",
+      "period": "September 2026",
+      "hint": "",
+      "region": "DE",
+      "key": false,
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "url": "https://www.destatis.de/DE/Presse/Wochenvorschau/_inhalt.html"
     },
     {
       "date": "2026-12-08",
