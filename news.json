@@ -1,6 +1,17 @@
 {
-  "updated": "2026-11-26T15:11:51Z",
+  "updated": "2026-11-27T08:25:59Z",
   "items": [
+    {
+      "headline": "Erwerbstätigkeit im Oktober 2026 saisonbereinigt gegenüber dem Vormonat leicht gesunken",
+      "desc": "Im Oktober 2026 waren nach Ergebnissen der Erwerbstätigenrechnung rund 45,69 Millionen Personen mit Wohnort in Deutschland (Inländerkonzept) erwerbstätig. Nach vorläufigen Berechnungen des …",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "lang": "de",
+      "category": "Arbeit",
+      "trend": "down",
+      "impact": 1,
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_412_132.html",
+      "published": "2026-11-27T07:00:00Z"
+    },
     {
       "headline": "Reallöhne im 3. Quartal 2026 um 1,3 % höher als im Vorjahresquartal",
       "desc": "Die Reallöhne der Arbeitnehmerinnen und Arbeitnehmer in Deutschland waren im 3. Quartal 2026 um 1,3 % höher als im Vorjahresquartal. Wie das Statistische Bundesamt (Destatis) weiter …",
@@ -121,28 +132,6 @@
       "impact": 1,
       "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N082_73.html",
       "published": "2026-11-23T07:00:00Z"
-    },
-    {
-      "headline": "Elektrischer Strom im Wert von 4,3 Milliarden Euro im 1. bis 3. Quartal 2026 exportiert",
-      "desc": "In den ersten drei Quartalen des Jahres 2026 wurden 48,8 Terawattstunden elektrischer Strom im Wert von 4,3 Milliarden Euro aus Deutschland exportiert. Wie das Statistische Bundesamt …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Konjunktur",
-      "trend": "flat",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_406_51.html",
-      "published": "2026-11-20T07:00:00Z"
-    },
-    {
-      "headline": "Erzeugerpreise im Oktober 2026: +8,1 % gegenüber Oktober 2025",
-      "desc": "Die Erzeugerpreise gewerblicher Produkte waren im Oktober 2026 um 8,1 % höher als im Oktober 2025. Das war der stärkste Anstieg gegenüber dem Vorjahresmonat seit Februar 2023 (+13,9 %). Wie …",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "lang": "de",
-      "category": "Preise",
-      "trend": "up",
-      "impact": 2,
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
-      "published": "2026-11-20T07:00:00Z"
     },
     {
       "headline": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
